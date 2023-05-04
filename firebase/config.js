@@ -3,7 +3,7 @@ import { getDatabase } from "firebase/database";
 
 // Your web app's Firebase configuration
 // const firebaseConfig = {
-//   apiKey: "AIzaSyDKXbMzxxLcZ4YdqfYd3szgaW6nFKtymwA",
+//   apiKey: "API",
 //   authDomain: "adsventure-66776.firebaseapp.com",
 //   projectId: "adsventure-66776",
 //   storageBucket: "adsventure-66776.appspot.com",
