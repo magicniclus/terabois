@@ -6,31 +6,34 @@ Ce projet initial est un modèle de base pour commencer rapidement la plupart de
 
 Voici la liste des dépendances incluses dans le projet :
 
-## Dépendances
+### Dépendances
 
-@headlessui/react
-@heroicons/react
-@react-firebase/auth
-@react-firebase/database
-@reduxjs/toolkit
-axios
-firebase
-gsap
-gsap-trial
-next
-react
-react-dom
-react-gtm-module
-react-redux
-redux
-redux-thunk
-Dépendances de développement
-autoprefixer
-postcss
-tailwindcss
+- @headlessui/react
+- @heroicons/react
+- @react-firebase/auth
+- @react-firebase/database
+- @reduxjs/toolkit
+- axios
+- firebase
+- gsap
+- gsap-trial
+- next
+- react
+- react-dom
+- react-gtm-module
+- react-redux
+- redux
+- redux-thunk
 
-##Clonage du projet et réinitialisation du nom
-###Pour cloner le projet, suivez ces étapes :
+### Dépendances de développement
+
+- autoprefixer
+- postcss
+- tailwindcss
+
+## Clonage du projet et réinitialisation du nom
+
+### Pour cloner le projet, suivez ces étapes :
 
 1. Ouvrez un terminal et exécutez la commande suivante pour cloner le projet :
    git clone https://github.com/magicniclus/initialproject.git <nom_du_nouveau_projet>
