@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projet Initial
 
-## Getting Started
+Ce projet initial est un modèle de base pour commencer rapidement la plupart de vos projets de développement. Il inclut un ensemble de dépendances pré-configurées et prêtes à l'emploi pour faciliter la mise en place de nouveaux projets.
 
-First, run the development server:
+## Dépendances incluses
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Voici la liste des dépendances incluses dans le projet :
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Dépendances
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+@headlessui/react
+@heroicons/react
+@react-firebase/auth
+@react-firebase/database
+@reduxjs/toolkit
+axios
+firebase
+gsap
+gsap-trial
+next
+react
+react-dom
+react-gtm-module
+react-redux
+redux
+redux-thunk
+Dépendances de développement
+autoprefixer
+postcss
+tailwindcss
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+##Clonage du projet et réinitialisation du nom
+###Pour cloner le projet, suivez ces étapes :
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Ouvrez un terminal et exécutez la commande suivante pour cloner le projet :
+   git clone https://github.com/magicniclus/initialproject.git <nom_du_nouveau_projet>
 
-## Learn More
+2. Accédez au répertoire du projet cloné :
+   cd <nom_du_nouveau_projet>
 
-To learn more about Next.js, take a look at the following resources:
+3. Supprimez le lien avec le dépôt d'origine :
+   git remote rm origin
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Mise à jour des dépendances
+   Pour mettre à jour les dépendances à leurs dernières versions, exécutez la commande suivante :
+   npm outdated
+   Cette commande vous montrera les dépendances obsolètes et les nouvelles versions disponibles.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Pour mettre à jour une dépendance spécifique, utilisez la commande suivante :
+npm install <nom_de_la_dependance>@latest
 
-## Deploy on Vercel
+5. Création d'un nouveau dépôt Git
+   Pour créer un nouveau dépôt Git indépendant avec le projet cloné, suivez ces étapes :
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Initialisez un nouveau dépôt Git :
+  git init
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Ajoutez tous les fichiers du projet au nouveau dépôt :
+  git add .
+
+- Validez les modifications :
+  git commit -m "Initial commit"
+
+- Créez un nouveau dépôt sur GitHub, puis ajoutez l'URL du dépôt en tant que nouvelle origine :
+  git remote add origin <URL_du_nouveau_dépôt>
+
+- Poussez les modifications vers le nouveau dépôt :
+  git push -u origin main
+
+Votre projet cloné est maintenant prêt à être utilisé avec un nouveau dépôt Git indépendant et les dernières versions des dépendances.
