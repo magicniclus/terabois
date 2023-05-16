@@ -1,3 +1,5 @@
+import Basic from "../layouts/Basic";
+
 export default function Home() {
-  return <h1 className="text-3xl font-bold">Hello world!</h1>;
+  return <Basic></Basic>;
 }
