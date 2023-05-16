@@ -31,7 +31,7 @@ const Hero = () => {
             <PhoneIcon className="h-5 w-5 flex-none text-white mr-2" />
             +33631420045
           </a>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end ml-2">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end ml-5">
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-800"
@@ -93,13 +93,20 @@ const Hero = () => {
                     Nos préstations <span aria-hidden="true">→</span>
                   </a>
                 </div>
+                <div className="flex items-center mt-10">
+                  <img src="./img/logos/logoRGE.png" className="h-10 w-10" />
+                  <h3 className="text-sm font-normal ml-3">
+                    {" "}
+                    Entreprise certifiée RGE
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
+            className="aspect-[3/2] object-cover lg:aspect-auto h-full w-full"
             src="./img/houses/top_768.jpg"
             alt=""
           />
