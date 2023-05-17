@@ -106,10 +106,11 @@ const Hero = () => {
         </div>
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            className="aspect-[3/2] object-cover lg:aspect-auto h-full w-full"
+            className="aspect-[3/2] object-cover lg:aspect-auto h-full w-full relative"
             src="./img/houses/top_768.jpg"
             alt=""
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50"></div>
         </div>
       </div>
     </div>
