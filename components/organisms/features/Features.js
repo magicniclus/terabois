@@ -39,12 +39,14 @@ const Features = () => {
           {prestations.map((prestation) => (
             <div className="mt:-5 grid grid-cols-1 gap-y-20 gap-x-6 sm:gap-x-8 w-full mx-auto hover:bg-gray-50 p-7 rounded-xl">
               <div className="group relative flex flex-col justify-between">
-                <div className="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden sm:aspect-w-3 sm:aspect-h-4">
+                <div className="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden sm:aspect-w-3 sm:aspect-h-4 relative">
                   <img
                     src={prestation.icon}
                     alt={prestation.name}
                     className="object-cover pointer-events-none w-full h-full"
                   />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50"></div>
                 </div>
                 <h3 className="mt-6 text-lg text-gray-800">
                   <a href={prestation.href}>
