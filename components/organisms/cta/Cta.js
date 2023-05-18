@@ -2,12 +2,12 @@ import React from "react";
 
 const Cta = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-200">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">
+        <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
           Et si on discutait de votre projet ?
           <br />
-          Nous sommes les spécialistes que vous cherchez
+          Nous sommes les spécialistes que vous cherchez.
         </h2>
         <div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
           <a
