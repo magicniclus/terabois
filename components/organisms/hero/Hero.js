@@ -110,7 +110,7 @@ const Hero = () => {
             src="./img/houses/top_768.jpg"
             alt=""
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 hidden lg:flex"></div>
         </div>
       </div>
     </div>
