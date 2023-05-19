@@ -76,7 +76,7 @@ const Nav = (props) => {
         <div className={` lg:flex-1 ${mobileMenuOpen ? "hidden" : "flex"}`}>
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Terabois</span>
-            <img className="h-8 w-auto" src="./img/logos/logo.png" alt="" />
+            <img className="h-8 w-auto" src="/img/logos/logo.png" alt="" />
           </a>
         </div>
         <div className={`${mobileMenuOpen ? "hidden" : "flex lg:flex-1"}`}>
@@ -91,7 +91,7 @@ const Nav = (props) => {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-800">
               Préstations
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -108,7 +108,7 @@ const Nav = (props) => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-800/5">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
@@ -117,14 +117,14 @@ const Nav = (props) => {
                     >
                       <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-gray-600 group-hover:text-blue"
                           aria-hidden="true"
                         />
                       </div>
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-gray-800"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -134,12 +134,12 @@ const Nav = (props) => {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <div className="grid grid-cols-2 divide-x divide-gray-800/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-800 hover:bg-gray-100"
                     >
                       <item.icon
                         className="h-5 w-5 flex-none text-gray-400"
@@ -168,7 +168,7 @@ const Nav = (props) => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-800/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5 py-6">
               <span className="sr-only">Terabois</span>
@@ -209,7 +209,7 @@ const Nav = (props) => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-800 hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -220,13 +220,13 @@ const Nav = (props) => {
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-800 hover:bg-gray-50"
                 >
                   Articles
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-800 hover:bg-gray-50"
                 >
                   Qui sommes nous ?
                 </a>
@@ -244,7 +244,7 @@ const Nav = (props) => {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-800 hover:bg-gray-50"
                 >
                   Log in
                 </a>
