@@ -5,7 +5,7 @@ const prestations = [
     name: "Isolation des combles",
     description:
       "Nous intervenons rapidement pour tout dépannage informatique.",
-    href: "#",
+    href: "/prestations/isolation-des-combles",
     icon: "./img/prestations/isolationcombles.jpg",
   },
   {
