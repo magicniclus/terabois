@@ -12,33 +12,6 @@ const FormContent = () => {
         <div className="relative px-6 pb-7 pt-7 lg:pt-28 lg:static lg:px-8 lg:py-18 h-full">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-800/10 lg:w-1/2">
-              {/* <svg
-                className="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern
-                    id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                    width={200}
-                    height={200}
-                    x="100%"
-                    y={-1}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path d="M130 200V.5M.5 .5H200" fill="none" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" strokeWidth={0} fill="white" />
-                <svg x="100%" y={-1} className="overflow-visible fill-gray-50">
-                  <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
-                </svg>
-                <rect
-                  width="100%"
-                  height="100%"
-                  strokeWidth={0}
-                  fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
-                />
-              </svg> */}
               <img
                 src="/img/prestations/isolationcombles.jpg"
                 className="w-full h-full object-cover relative"
@@ -119,7 +92,7 @@ const FormContent = () => {
                   htmlFor="first-name"
                   className="block text-sm font-semibold leading-6 text-gray-800"
                 >
-                  First name
+                  Nom
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -136,7 +109,7 @@ const FormContent = () => {
                   htmlFor="last-name"
                   className="block text-sm font-semibold leading-6 text-gray-800"
                 >
-                  Last name
+                  Prenom
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -170,7 +143,7 @@ const FormContent = () => {
                   htmlFor="phone-number"
                   className="block text-sm font-semibold leading-6 text-gray-800"
                 >
-                  Phone number
+                  Téléphone
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -183,6 +156,27 @@ const FormContent = () => {
                 </div>
               </div>
               <div className="sm:col-span-2">
+                <label
+                  htmlFor="phone-number"
+                  className="block text-sm font-semibold leading-6 text-gray-800"
+                >
+                  Préstation souhaitée
+                </label>
+                <div className="mt-2.5">
+                  <select
+                    required
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                  >
+                    <option value="" disabled selected>
+                      Selectionnez une prestation
+                    </option>
+                    <option value="prestation1">Prestation 1</option>
+                    <option value="prestation2">Prestation 2</option>
+                    <option value="prestation3">Prestation 3</option>
+                  </select>
+                </div>
+              </div>
+              {/* <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
                   className="block text-sm font-semibold leading-6 text-gray-800"
@@ -198,14 +192,24 @@ const FormContent = () => {
                     defaultValue={""}
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
-            <div className="mt-8 flex justify-end">
+            <div className="mt-8 flex justify-between">
+              <div className="w-4/6">
+                <input type="checkbox" id="rgpd" name="rgpd" required />
+                <label
+                  htmlFor="rgpd"
+                  className="ml-2 text-sm font-normal text-gray-800"
+                >
+                  J'accepte les conditions de la politique de confidentialité et
+                  RGPD.
+                </label>
+              </div>
               <button
                 type="submit"
                 className="rounded-md bg-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blueClear focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue"
               >
-                Send message
+                Envoyer
               </button>
             </div>
           </div>
