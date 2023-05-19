@@ -6,7 +6,6 @@ const featuredTestimonial = {
     handle: "brennagoyette",
     imageUrl:
       "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
   },
 };
 const testimonials = [
