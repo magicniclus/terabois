@@ -5,7 +5,7 @@ const BlogContent = () => {
     <div className="relative isolate px-6 lg:px-8  pt-24 sm:pt-32">
       <div className="mx-auto max-w-xl text-center">
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">
-          Toutes notre expertise en article
+          Toute notre expertise en article
         </h2>
       </div>
       <div className="mx-auto max-w-7xl p-6 lg:p-8 grid gap-y-4 rounded-xl  mt-16">
@@ -23,9 +23,12 @@ const BlogContent = () => {
                 <br /> comment trouver la
                 <br /> bonne entrepise ?
               </h3>
-              <a href="#" className="text-sm font-normal leading-6 text-white">
+              <div
+                href="#"
+                className="text-sm font-normal leading-6 text-white"
+              >
                 En savoir plus <span aria-hidden="true">→</span>
-              </a>
+              </div>
             </a>
           </div>
         </div>
@@ -44,12 +47,12 @@ const BlogContent = () => {
                   <br /> pour son logement après les
                   <br /> travaux
                 </h3>
-                <a
+                <div
                   href="#"
                   className="text-sm font-normal leading-6 text-white"
                 >
                   En savoir plus <span aria-hidden="true">→</span>
-                </a>
+                </div>
               </a>
             </div>
           </div>
@@ -67,12 +70,12 @@ const BlogContent = () => {
                   <br /> pour son logement après les
                   <br /> travaux
                 </h3>
-                <a
+                <div
                   href="#"
                   className="text-sm font-normal leading-6 text-white"
                 >
                   En savoir plus <span aria-hidden="true">→</span>
-                </a>
+                </div>
               </a>
             </div>
           </div>
@@ -90,12 +93,12 @@ const BlogContent = () => {
                   <br /> lequel choisir pour
                   <br /> votre projet ?
                 </h3>
-                <a
+                <div
                   href="#"
                   className="text-sm font-normal leading-6 text-white"
                 >
                   En savoir plus <span aria-hidden="true">→</span>
-                </a>
+                </div>
               </a>
             </div>
           </div>
