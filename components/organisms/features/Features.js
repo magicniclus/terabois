@@ -3,30 +3,22 @@ import React from "react";
 const prestations = [
   {
     name: "Isolation des combles",
-    description:
-      "Nous intervenons rapidement pour tout dépannage informatique.",
     href: "/prestations/isolation-des-combles",
     icon: "./img/prestations/isolationcombles.jpg",
   },
   {
     name: "Isolation des murs exterieurs/intérieurs",
-    description:
-      "Nous intervenons rapidement pour tout dépannage informatique.",
-    href: "#",
+    href: "/prestations/isolation-des-murs",
     icon: "./img/prestations/ext-two.jpg",
   },
   {
     name: "Ossature bois, bardage",
-    description:
-      "Nous intervenons rapidement pour tout dépannage informatique.",
-    href: "#",
+    href: "/prestations/ossature-bois",
     icon: "https://images.unsplash.com/photo-1603439810849-5e013dc3ce73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80",
   },
   {
     name: "Terrasse bois",
-    description:
-      "Nous intervenons rapidement pour tout dépannage informatique.",
-    href: "#",
+    href: "/prestations/terrasse-bois",
     icon: "https://images.unsplash.com/photo-1624409990662-03f19cc0e0cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
   },
 ];
