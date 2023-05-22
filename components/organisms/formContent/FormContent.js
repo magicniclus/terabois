@@ -1,9 +1,11 @@
 import React from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import BadgeAide from "../badges/BadgeAide";
+import BadgeChantier from "../badges/BadgeChantier";
 
 const FormContent = (props) => {
   const badge = props.badge || false;
+  const badgeChantier = props.badgeChantier || false;
   const title = props.title || "Isolation des combles";
   const description =
     props.description ||
@@ -56,6 +58,7 @@ const FormContent = (props) => {
                   </div>
                 ))}
               </dl>
+              {badgeChantier ? <BadgeChantier /> : null}
               {badge ? <BadgeAide /> : null}
             </div>
           </div>
