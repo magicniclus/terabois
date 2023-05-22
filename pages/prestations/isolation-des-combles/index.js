@@ -20,6 +20,7 @@ const index = () => {
         ]}
         image="isolation.jpeg"
         badge={true}
+        badgeChantier={false}
       />
     </Blog>
   );
