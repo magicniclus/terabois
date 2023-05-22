@@ -1,89 +1,69 @@
 import React from "react";
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import BadgeAide from "../badges/BadgeAide";
 
-const FormContent = () => {
+const FormContent = (props) => {
+  const badge = props.badge || false;
+  const title = props.title || "Isolation des combles";
+  const description =
+    props.description ||
+    "Proin volutpat consequat porttitor cras nullam gravida at. Orcimolestie a eu arcu. Sed ut tincidunt integer elementum id sem.Arcu sed malesuada et magna.";
+  const avantages = props.avantages || [
+    "Plus de 90% de nos clients satisfaits",
+    "Jusqu'à 80% d'aide de l'état sur vos travaux d'isolation",
+    "L'entreprise n°1 en Gironde pour l'isolation des combles",
+    "Entreprise certifiée RGE Qualibat",
+  ];
+  const prestations = props.prestations || [
+    "isolation des combles perdues",
+    "Isolation sous rampant",
+    "Isolation sous toiture",
+  ];
   return (
     <div className="relative isolate bg-white min-h-[calc(100vh-80px)] h-full">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 h-full">
-        <div className="relative px-6 pb-7 pt-7 lg:pt-28 lg:static lg:px-8 lg:py-18 h-full">
+        <div className="relative my-auto px-6 pb-7 pt-7 lg:pt-28 lg:static lg:px-8 lg:py-18 h-full">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-800/10 lg:w-1/2">
               <img
-                src="/img/prestations/isolationcombles.jpg"
+                src={`/img/prestations/${
+                  props.image || "isolationcombles.jpg"
+                }`}
                 className="w-full h-full object-cover relative"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 hidden lg:flex"></div>
             </div>
-            <div className="bg-white py-16 px-10  rounded-xl bg-opacity-90">
+            <div className="bg-white py-16 px-10  rounded-xl bg-opacity-90 relative">
               <h1 className="text-3xl font-bold tracking-tight text-gray-800">
-                Isolation des combles
+                {title}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Proin volutpat consequat porttitor cras nullam gravida at. Orci
-                molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-                Arcu sed malesuada et magna.
+                {description}
               </p>
               <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Address</span>
-                    <BuildingOffice2Icon
-                      className="h-7 w-6 text-gray-400"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd>
-                    545 Mavis Island
-                    <br />
-                    Chicago, IL 99191
-                  </dd>
-                </div>
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Telephone</span>
-                    <PhoneIcon
-                      className="h-7 w-6 text-gray-400"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd>
-                    <a
-                      className="hover:text-gray-900"
-                      href="tel:+1 (555) 234-5678"
-                    >
-                      +1 (555) 234-5678
-                    </a>
-                  </dd>
-                </div>
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Email</span>
-                    <EnvelopeIcon
-                      className="h-7 w-6 text-gray-400"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd>
-                    <a
-                      className="hover:text-gray-800"
-                      href="mailto:hello@example.com"
-                    >
-                      hello@example.com
-                    </a>
-                  </dd>
-                </div>
+                {avantages.map((aventage, index) => (
+                  <div key={index} className="flex gap-x-4">
+                    <dt className="flex-none">
+                      <span className="sr-only">Check</span>
+                      <CheckCircleIcon
+                        className="h-7 w-6 text-green-600"
+                        aria-hidden="true"
+                      />
+                    </dt>
+                    <dd>
+                      <p>{aventage}</p>
+                    </dd>
+                  </div>
+                ))}
               </dl>
+              {badge ? <BadgeAide /> : null}
             </div>
           </div>
         </div>
         <form
           action="#"
           method="POST"
-          className="px-6 pb-7 pt-7 lg:pt-28 lg:px-8 lg:py-18 h-full"
+          className="px-6 pb-7 pt-7 lg:pt-28 lg:px-8 lg:py-18 h-full my-auto"
         >
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -160,6 +140,23 @@ const FormContent = () => {
                   htmlFor="phone-number"
                   className="block text-sm font-semibold leading-6 text-gray-800"
                 >
+                  Adresse
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    autoComplete="Adresse"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label
+                  htmlFor="phone-number"
+                  className="block text-sm font-semibold leading-6 text-gray-800"
+                >
                   Préstation souhaitée
                 </label>
                 <div className="mt-2.5">
@@ -170,29 +167,14 @@ const FormContent = () => {
                     <option value="" disabled selected>
                       Selectionnez une prestation
                     </option>
-                    <option value="prestation1">Prestation 1</option>
-                    <option value="prestation2">Prestation 2</option>
-                    <option value="prestation3">Prestation 3</option>
+                    {prestations.map((prestation, index) => (
+                      <option key={index} value={prestation}>
+                        {prestation}
+                      </option>
+                    ))}
                   </select>
                 </div>
               </div>
-              {/* <div className="sm:col-span-2">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-gray-800"
-                >
-                  Message
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows={4}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
-                    defaultValue={""}
-                  />
-                </div>
-              </div> */}
             </div>
             <div className="mt-8 flex justify-between">
               <div className="w-4/6">
