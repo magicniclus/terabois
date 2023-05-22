@@ -20,6 +20,7 @@ const index = () => {
         ]}
         image="ite.jpeg"
         badge={true}
+        badgeChantier={false}
       />
     </Blog>
   );
