@@ -22,7 +22,7 @@ const BlogNav = (props) => {
             </a>
             <h2 className="text-gray-600 text-sm lg:text-xl ml-10">{title}</h2>
           </div>
-          <div className="fixed top-5 right-11 text-white hidden lg:flex">
+          <div className="top-5 right-11 text-white hidden lg:flex">
             <a
               href="#"
               className="lg:flex items-center text-lg font-bold leading-6 bg-blue hover:bg-blueClear  px-4 py-2 rounded-lg"
