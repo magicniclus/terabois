@@ -1,19 +1,29 @@
-import { getDatabase, ref, set } from "firebase/database";
+import { database } from "./firebase.config";
+import { set, ref } from "firebase/database";
 
-function writeUserData(userId, name, lastname, email, phone, zipCode) {
+function writeUserData(
+  userId,
+  name,
+  lastname,
+  email,
+  phone,
+  zipCode,
+  prestation
+) {
   return new Promise((resolve, reject) => {
-    const db = getDatabase();
-    set(ref(db, "contacts/" + userId), {
+    set(ref(database, "contacts/" + userId), {
       name,
       lastname,
       email,
       phone,
       zipCode,
       userId,
+      prestation,
       date: new Date().toLocaleString(),
     })
       .then(() => {
         resolve("success");
+        new Date().toLocaleString();
       })
       .catch((error) => {
         reject(error);
