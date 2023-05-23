@@ -114,12 +114,12 @@ const FormContent = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const userId = generateUniqueId();
-    writeUserData(userId, name, lastname, email, phone, zipCode)
+    writeUserData(userId, name, lastname, email, phone, zipCode, prestation)
       .then((success) => {
-        console.log("ok");
+        console.log(success);
       })
       .catch((error) => {
-        console.log("ok");
+        console.log(error);
       });
   };
 
