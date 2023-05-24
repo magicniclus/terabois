@@ -20,6 +20,7 @@ const index = () => {
           "Bardage bois",
         ]}
         image="ossature.jpeg"
+        badge={true}
       />
     </Blog>
   );
