@@ -9,7 +9,7 @@ const BlogContent = () => {
         </h2>
       </div>
       <div className="mx-auto max-w-7xl p-6 lg:p-8 grid gap-y-4 rounded-xl  mt-16">
-        <div className="w-full h-[200px] rounded-xl overflow-hidden relative">
+        <div className="w-full h-[200px] rounded-lg overflow-hidden relative">
           <img
             src="https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
             alt="isolation des combles"
@@ -33,7 +33,7 @@ const BlogContent = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-4 gap-y-4">
-          <div className="bg-logoOne rounded-xl relative overflow-hidden max-h-[250px]">
+          <div className="bg-logoOne rounded-lg relative overflow-hidden max-h-[250px]">
             <img
               src="https://images.unsplash.com/photo-1595877244574-e90ce41ce089?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
               alt="isolation des combles"
@@ -56,7 +56,7 @@ const BlogContent = () => {
               </a>
             </div>
           </div>
-          <div className="bg-logoOne rounded-xl relative overflow-hidden max-h-[250px]">
+          <div className="bg-logoOne rounded-lg relative overflow-hidden max-h-[250px]">
             <img
               src="https://images.unsplash.com/photo-1595877244574-e90ce41ce089?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
               alt="isolation des combles"
@@ -79,7 +79,7 @@ const BlogContent = () => {
               </a>
             </div>
           </div>
-          <div className="bg-logoOne rounded-xl relative overflow-hidden max-h-[250px]">
+          <div className="bg-logoOne rounded-lg relative overflow-hidden max-h-[250px]">
             <img
               src="https://images.unsplash.com/photo-1467533003447-e295ff1b0435?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               alt="maison bois"
