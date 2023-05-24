@@ -94,7 +94,7 @@ const Hero = () => {
                   </a>
                 </div>
                 <div className="flex items-center mt-10">
-                  <img src="./img/logos/logoRGE.png" className="h-10 w-10" />
+                  <img src="/img/logos/logoRGE.png" className="h-10 w-10" />
                   <h3 className="text-sm font-normal ml-3">
                     {" "}
                     Entreprise certifiée RGE
@@ -107,7 +107,7 @@ const Hero = () => {
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto h-full w-full relative"
-            src="./img/houses/top_768.jpg"
+            src="/img/houses/top_768.jpg"
             alt=""
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 hidden lg:flex"></div>
