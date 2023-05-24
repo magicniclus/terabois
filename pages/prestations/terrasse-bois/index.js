@@ -12,7 +12,7 @@ const index = () => {
           "L'entreprise n°1 en Gironde pour les terrasses bois",
           "Travaillez avec nos charpentier reconnus",
           "Plus de 90% de nos clients satisfaits",
-          "Entreprise certifiée RGE Qualibat",
+          "Plus de 3000 réalisations",
         ]}
         prestations={["Terrasse bois"]}
         image="terrasse.jpeg"
