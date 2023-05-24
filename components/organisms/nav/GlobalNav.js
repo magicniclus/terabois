@@ -94,6 +94,10 @@ const company = [
   },
 ];
 
+const callsToActionArticle = [
+  { name: "Plus d'article", href: "#", icon: PlayCircleIcon },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -129,8 +133,8 @@ const GlobalNav = () => {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12 items-center">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-800">
-              Product
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-800 outline-none">
+              Préstations
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -191,7 +195,7 @@ const GlobalNav = () => {
             </Transition>
           </Popover>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-800">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-800 outline-none">
               Articles
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -232,6 +236,21 @@ const GlobalNav = () => {
                     </div>
                   </div>
                 ))}
+                <div className="grid grid-cols-2 divide-x divide-gray-800/5 bg-gray-50">
+                  {callsToActionArticle.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                    >
+                      <item.icon
+                        className="h-5 w-5 flex-none text-gray-400"
+                        aria-hidden="true"
+                      />
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
               </Popover.Panel>
             </Transition>
           </Popover>
