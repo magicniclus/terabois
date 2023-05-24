@@ -25,7 +25,7 @@ const prestations = [
 
 const Features = () => {
   return (
-    <div className="bg-white px-10 pt-3">
+    <div className="bg-white px-10 pt-3" id="prestations">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-10">
           {prestations.map((prestation) => (
