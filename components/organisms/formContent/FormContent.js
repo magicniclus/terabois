@@ -125,8 +125,8 @@ const FormContent = (props) => {
 
   return (
     <div className="relative isolate bg-white min-h-[calc(100vh-80px)] h-full">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 h-full">
-        <div className="relative my-auto px-6 pb-7 pt-7 lg:pt-24 lg:static lg:px-8 lg:py-12 h-full">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-80px)]">
+        <div className="relative my-auto lg:static h-full flex justify-center items-center py-10 px-5">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-800/10 lg:w-1/2">
               <img
@@ -137,7 +137,10 @@ const FormContent = (props) => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 hidden lg:flex"></div>
             </div>
-            <div className="bg-white py-16 px-10  rounded-xl bg-opacity-90 relative">
+            <div className="bg-white py-10 px-10  rounded-xl bg-opacity-90 relative">
+              <h2 className="text-lg mt-3 font-semibold tracking-tight text-gray-800">
+                Prenons rendez-vous
+              </h2>
               <h1 className="text-3xl font-bold tracking-tight text-gray-800">
                 {title}
               </h1>
@@ -170,7 +173,7 @@ const FormContent = (props) => {
           method="POST"
           type="submit"
           onSubmit={handleSubmit}
-          className="px-6 pb-7 pt-7 lg:pt-28 lg:px-8 lg:py-18 h-full my-auto"
+          className="relative my-auto lg:static h-full flex justify-center items-center  py-10 px-5 "
         >
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
