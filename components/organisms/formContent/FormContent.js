@@ -4,8 +4,12 @@ import BadgeAide from "../badges/BadgeAide";
 import BadgeChantier from "../badges/BadgeChantier";
 import { generateUniqueId } from "../../../utils/utils";
 import { writeUserData } from "../../../firebase/database";
+import { useRouter } from "next/router";
+import { set } from "firebase/database";
 
 const FormContent = (props) => {
+  const router = useRouter();
+
   const badge = props.badge || false;
   const badgeChantier = props.badgeChantier || false;
   const title = props.title || "Isolation des combles";
@@ -48,6 +52,8 @@ const FormContent = (props) => {
   const [isRgpdValid, setRgpdValid] = useState(true);
 
   const [isFormValid, setFormValid] = useState(false);
+
+  const [loaderIsActif, setLoaderIsActif] = useState(false);
 
   useEffect(() => {
     if (
@@ -113,12 +119,16 @@ const FormContent = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoaderIsActif(true);
     const userId = generateUniqueId();
     writeUserData(userId, name, lastname, email, phone, zipCode, prestation)
       .then((success) => {
         console.log(success);
+        setLoaderIsActif(false);
+        router.push(`${router.asPath}/remerciement`);
       })
       .catch((error) => {
+        setLoaderIsActif(false);
         console.log(error);
       });
   };
@@ -126,7 +136,7 @@ const FormContent = (props) => {
   return (
     <div className="relative isolate bg-white min-h-[calc(100vh-80px)] h-full">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-80px)]">
-        <div className="relative my-auto lg:static h-full flex justify-center items-center py-10 px-5">
+        <div className="relative my-auto lg:static h-full flex items-center py-10 px-5">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-800/10 lg:w-1/2">
               <img
@@ -173,8 +183,16 @@ const FormContent = (props) => {
           method="POST"
           type="submit"
           onSubmit={handleSubmit}
-          className="relative my-auto lg:static h-full flex justify-center items-center  py-10 px-5 "
+          className="relative my-auto lg:static h-full flex justify-end items-center py-10 px-5"
         >
+          {
+            // Loader
+            loaderIsActif ? (
+              <div className="absolute top-0 right-0 h-full w-full bg-white bg-opacity-80 flex justify-center items-center">
+                <img src="/img/logos/loader.gif" className="w-20 h-20" />
+              </div>
+            ) : null
+          }
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
