@@ -10,7 +10,7 @@ const index = () => {
         avantages={[
           "L'entreprise n°1 en Gironde pour l'isolation des combles",
           "Jusqu'à 80% d'aide de l'état sur vos travaux d'isolation",
-          "Plus de 90% de nos clients satisfaits sur plus de 3000 réalisations",
+          "Plus de 90% de nos clients satisfaits sur +3000 réalisations",
           "Entreprise certifiée RGE Qualibat",
         ]}
         prestations={[
