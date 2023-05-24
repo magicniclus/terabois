@@ -3,13 +3,6 @@ import { useState } from "react";
 import Nav from "../nav/Nav";
 import { PhoneIcon, UserCircleIcon } from "@heroicons/react/20/solid";
 
-const navigation = [
-  { name: "Préstations", href: "#" },
-  { name: "Qui sommes nous ?", href: "#" },
-  { name: "Articles", href: "#" },
-  { name: "0631420045", href: "#", icon: true },
-];
-
 const Hero = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
@@ -87,7 +80,7 @@ const Hero = () => {
                     Prendre rendez-vous
                   </a>
                   <a
-                    href="#"
+                    href="#prestations"
                     className="text-sm font-semibold leading-6 text-gray-800"
                   >
                     Nos préstations <span aria-hidden="true">→</span>
