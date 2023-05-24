@@ -60,23 +60,63 @@ const callsToAction = [
   { name: "Contact", href: "#", icon: PhoneIcon },
 ];
 
+const company = [
+  {
+    name: "About us",
+    href: "#",
+    icon: SquaresPlusIcon,
+    description: "Get to know our team and our story",
+  },
+  {
+    name: "Careers",
+    href: "#",
+    icon: SquaresPlusIcon,
+    description: "Get to know our team and our story",
+  },
+  {
+    name: "Support",
+    href: "#",
+    icon: SquaresPlusIcon,
+    description: "Get to know our team and our story",
+  },
+  {
+    name: "Press",
+    href: "#",
+    icon: SquaresPlusIcon,
+    description: "Get to know our team and our story",
+  },
+  {
+    name: "Blog",
+    href: "#",
+    icon: SquaresPlusIcon,
+    description: "Get to know our team and our story",
+  },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const Nav = (props) => {
   const mobileMenuOpen = props.mobileMenuOpen;
   const setMobileMenuOpen = props.setMobileMenuOpen;
+  const withBg = props.withBg || true;
 
   return (
     <>
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between py-6"
+        className={`mx-auto flex max-w-7xl items-center justify-between py-6 ${
+          withBg ? (mobileMenuOpen ? "" : "bg-white") : ""
+        }`}
         aria-label="Global"
       >
         <div className={` lg:flex-1 ${mobileMenuOpen ? "hidden" : "flex"}`}>
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Terabois</span>
-            <img className="h-8 w-auto" src="/img/logos/logo.png" alt="" />
+            <img
+              className="h-8 w-auto"
+              src="/img/logos/logo.png"
+              alt="terabois"
+            />
           </a>
         </div>
         <div className={`${mobileMenuOpen ? "hidden" : "flex lg:flex-1"}`}>
@@ -167,14 +207,14 @@ const Nav = (props) => {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
+        <div className="fixed inset-0 z-100" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-800/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5 py-6">
+            <a href="#" className="-m-1.5 p-1.5 py-7">
               <span className="sr-only">Terabois</span>
               <img
                 className="h-8 w-auto"
-                src="./img/logos/logo.png"
+                src="/img/logos/logo.png"
                 alt="terabois"
               />
             </a>
@@ -183,7 +223,7 @@ const Nav = (props) => {
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <span className="sr-only">Close menu</span>
+              <span className="sr-only">Fermer le menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -193,7 +233,7 @@ const Nav = (props) => {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         Préstations
                         <ChevronDownIcon
                           className={classNames(
@@ -209,7 +249,36 @@ const Nav = (props) => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-800 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
+                        ))}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+
+                <Disclosure as="div" className="-mx-3">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        Articles
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
+                          aria-hidden="true"
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {[...company].map((item) => (
+                          <Disclosure.Button
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -220,16 +289,11 @@ const Nav = (props) => {
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-800 hover:bg-gray-50"
-                >
-                  Articles
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-800 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Qui sommes nous ?
                 </a>
+
                 <a
                   href="#"
                   className="-mx-3 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue hover:text-blueClear hover:bg-gray-50 flex items-center"
@@ -244,9 +308,9 @@ const Nav = (props) => {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-800 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Se connecter
                 </a>
               </div>
             </div>
