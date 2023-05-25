@@ -26,13 +26,13 @@ const Article = (props) => {
       </Head>
       <GlobalNav />
       <main className="bg-white relative">
-        <div className="mx-auto flex lg:flex-col max-w-7xl">
-          <div className="w-4/6">
-            <ArticleContant data={data} />
+        <div className="mx-auto flex lg:flex-col max-w-7xl justify-center">
+          <div className="w-4/6 h-20 bg-blue">
+            {/* <ArticleContant data={data} /> */}
           </div>
-          <div className="bg-logoOne w-2/6">
+          <div className="w-2/6 bg-dark">
             <h1>ok</h1>
-            <h2>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
               numquam a totam, dolore qui accusantium laborum corporis nam ipsam
               hic nisi eaque ratione, illo similique ut, eum molestiae repellat
@@ -68,7 +68,7 @@ const Article = (props) => {
               quam voluptates deserunt voluptatum quis soluta magni repudiandae
               quasi officiis. Voluptate expedita animi eius quidem sed
               accusantium labore quisquam deleniti.
-            </h2>
+            </p>
           </div>
         </div>
       </main>
