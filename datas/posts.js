@@ -70,7 +70,7 @@ const posts = {
         role: "Expert en Isolation",
         href: "#",
       },
-      readingTime: "5",
+      readingTime: "1",
       tableOfContents: [
         "Votre partenaire de confiance pour l'isolation à Bordeaux",
         "Notre expertise en isolation des combles à Bordeaux",
@@ -161,7 +161,7 @@ const posts = {
         role: "Expert en Isolation",
         href: "#",
       },
-      readingTime: "5",
+      readingTime: "1",
       tableOfContents: [
         "TeraBois, Votre Entreprise d'Isolation de Référence à Bordeaux",
         "Notre Expertise en Isolation Thermique à Bordeaux",
@@ -297,7 +297,7 @@ const posts = {
         role: "Expert en Isolation des Combles",
         href: "#",
       },
-      readingTime: "5",
+      readingTime: "1",
       tableOfContents: [
         "L'excellence en Isolation des Combles à Bordeaux avec TeraBois",
         "Pourquoi l'Isolation des Combles est Cruciale à Bordeaux",
@@ -383,7 +383,7 @@ const posts = {
         role: "Expert en Terrasses en Bois",
         href: "#",
       },
-      readingTime: "5",
+      readingTime: "1",
       tableOfContents: [
         "Terrasse en Bois à Bordeaux: TeraBois, Votre Partenaire de Confiance",
         "Pourquoi Choisir TeraBois pour votre Terrasse en Bois à Bordeaux",
@@ -487,7 +487,7 @@ const posts = {
         role: "Expert en Couverture",
         href: "#",
       },
-      readingTime: "5",
+      readingTime: "1",
       tableOfContents: [
         "Couvreur Bordeaux : TeraBois, Votre Partenaire de Confiance",
         "Pourquoi Choisir TeraBois comme Couvreur à Bordeaux ?",
