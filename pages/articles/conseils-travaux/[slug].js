@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import posts from "../../../datas/posts";
 import Article from "../../../layouts/Article";
+import ArticleContant from "../../../components/organisms/content/ArticleContant";
 
 export default function BlogPost({ post }) {
   const router = useRouter();
@@ -15,7 +16,11 @@ export default function BlogPost({ post }) {
 
   return (
     <>
-      <Article data={post} />
+      <Article data={post}>
+        <div>
+          <ArticleContant data={post} />
+        </div>
+      </Article>
     </>
   );
 }
