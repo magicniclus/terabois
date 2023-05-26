@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   ArrowPathIcon,
+  ArrowUpRightIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
@@ -21,37 +22,37 @@ const products = [
   {
     name: "Isolation",
     description: "Get a better understanding of your traffic",
-    href: "#",
+    href: "prestations/isolation-des-combles",
     icon: ChartPieIcon,
   },
   {
     name: "ITE/ITI",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "prestations/isolation-des-murs",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Terrasse bois",
     description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "prestations/terrasse-bois",
     icon: FingerPrintIcon,
   },
   {
     name: "Ossature bois",
     description: "Connect with third-party tools",
-    href: "#",
+    href: "prestations/ossature-bois",
     icon: SquaresPlusIcon,
   },
   {
     name: "Bardage",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "prestations/ossature-bois",
     icon: ArrowPathIcon,
   },
   {
     name: "Charpente couverture",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "prestations/ossature-bois",
     icon: ArrowPathIcon,
   },
 ];
@@ -63,39 +64,33 @@ const callsToAction = [
 
 const company = [
   {
-    name: "About us",
-    href: "#",
+    name: "Tous savoir sur l'isolation des combles",
+    href: "/articles/conseils-travaux/isolation-des-combles-a-bordeaux-avec-terabois",
     icon: SquaresPlusIcon,
-    description: "Get to know our team and our story",
+    description:
+      "Découvrez comment notre expertise en isolation des combles peut améliorer votre confort.",
   },
   {
-    name: "Careers",
-    href: "#",
+    name: "Terrasse en Bois à Bordeaux",
+    href: "/articles/conseils-travaux/terrasse-en-bois-a-bordeaux-avec-terabois",
     icon: SquaresPlusIcon,
-    description: "Get to know our team and our story",
+    description: "Comment choisir sa terrasse en bois ?",
   },
   {
-    name: "Support",
-    href: "#",
+    name: "Choisir son couvreur à Bordeaux",
+    href: "/articles/conseils-travaux/couvreurs-bordeaux-avec-terabois",
     icon: SquaresPlusIcon,
-    description: "Get to know our team and our story",
+    description: "Pour une toiture durable et de qualité.",
   },
   {
-    name: "Press",
-    href: "#",
+    name: "Isolation des murs à Bordeaux",
+    href: "/articles/conseils-travaux/isolation-des-combles-a-bordeaux-avec-terabois",
     icon: SquaresPlusIcon,
-    description: "Get to know our team and our story",
-  },
-  {
-    name: "Blog",
-    href: "#",
-    icon: SquaresPlusIcon,
-    description: "Get to know our team and our story",
+    description: "Isolation exterieur ou interieur, quelle solution choisir ?",
   },
 ];
-
 const callsToActionArticle = [
-  { name: "Plus d'article", href: "#", icon: PlayCircleIcon },
+  { name: "Plus d'article", href: "/articles", icon: ArrowUpRightIcon },
 ];
 
 function classNames(...classes) {
