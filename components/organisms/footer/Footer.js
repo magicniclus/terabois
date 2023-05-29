@@ -2,20 +2,25 @@ import React from "react";
 
 const navigation = {
   solutions: [
-    { name: "Isolation des combles", href: "#" },
-    { name: "Isolation des murs interieurs(ITI)/exterieurs(ITE)", href: "#" },
-    { name: "Ossature bois - Bardage", href: "#" },
-    { name: "Terrasse bois", href: "#" },
+    {
+      name: "Isolation des combles",
+      href: "/prestations/isolation-des-combles",
+    },
+    {
+      name: "Isolation des murs interieurs(ITI)/exterieurs(ITE)",
+      href: "/prestations/isolation-des-murs",
+    },
+    { name: "Ossature bois - Bardage", href: "/prestations/ossature-bois" },
+    { name: "Terrasse bois", href: "/prestations/terrasse-bois" },
   ],
   contact: [
     { name: "Nous contacter", href: "#" },
-    { name: "Prendre rendez-vous", href: "#" },
     { name: "Job", href: "#" },
   ],
   entreprise: [
-    { name: "L'entreprise", href: "#" },
-    { name: "Articles", href: "#" },
-    { name: "F.A.Q", href: "#" },
+    { name: "L'entreprise", href: "/entreprise" },
+    { name: "Articles", href: "/articles" },
+    { name: "F.A.Q", href: "/faq" },
   ],
   legal: [
     { name: "Politique de confidentialité", href: "#" },
