@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Hero from "../components/organisms/hero/Hero";
-import Footer from "../components/organisms/footer/Footer";
 import BlogNav from "../components/organisms/nav/BlogNav";
+import Cookie from "../components/organisms/cookie/Cookie";
 
 const Basic = (props) => {
   const description = props.description || null;
@@ -21,6 +20,7 @@ const Basic = (props) => {
       </Head>
       <BlogNav />
       <main className="bg-white min-h-[100vh] relative">{props.children}</main>
+      <Cookie />
     </>
   );
 };
