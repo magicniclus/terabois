@@ -20,10 +20,10 @@ const index = () => {
             </p>
           </div>
           <div className="flex items-center mt-16">
-            <h2 className=" text-xl font-bold tracking-tight text-blue sm:text-2xl">
+            <h2 className=" text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
               Nos Conseils Travaux
             </h2>
-            <ArrowRightIcon className="h-5 w-5 text-blue ml-3 text-center" />
+            <ArrowRightIcon className="h-5 w-5 text-gray-800 ml-3 text-center" />
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {posts.conseilsTravaux.map((post) => (
@@ -61,7 +61,7 @@ const index = () => {
                   </div>
                 </div>
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                  <a href={post}>
+                  <a href={`articles/conseils-travaux/${post.slug}`}>
                     <span className="absolute inset-0" />
                     {post.title}
                   </a>
@@ -72,10 +72,10 @@ const index = () => {
           {posts.aidesTravaux > 0 ? (
             <>
               <div className="flex items-center mt-16">
-                <h2 className=" text-xl font-bold tracking-tight text-blue sm:text-2xl">
+                <h2 className=" text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                   Les aides travaux
                 </h2>
-                <ArrowRightIcon className="h-5 w-5 text-blue ml-3 text-center" />
+                <ArrowRightIcon className="h-5 w-5 text-gray-800 ml-3 text-center" />
               </div>
               <div className="mx-auto mt-10 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 {posts.aidesTravaux.map((post) => (
@@ -113,7 +113,7 @@ const index = () => {
                       </div>
                     </div>
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                      <a href={post}>
+                      <a href={`articles/aides-travaux/${post.slug}`}>
                         <span className="absolute inset-0" />
                         {post.title}
                       </a>
@@ -126,10 +126,10 @@ const index = () => {
           {posts.divers > 0 ? (
             <>
               <div className="flex items-center mt-16">
-                <h2 className=" text-xl font-bold tracking-tight text-blue sm:text-2xl">
+                <h2 className=" text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                   Divers
                 </h2>
-                <ArrowRightIcon className="h-5 w-5 text-blue ml-3 text-center" />
+                <ArrowRightIcon className="h-5 w-5 text-gray-800 ml-3 text-center" />
               </div>
               <div className="mx-auto mt-10 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 {posts.divers.map((post) => (
@@ -167,7 +167,7 @@ const index = () => {
                       </div>
                     </div>
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                      <a href={post}>
+                      <a href={`articles/divers/${post.slug}`}>
                         <span className="absolute inset-0" />
                         {post.title}
                       </a>
