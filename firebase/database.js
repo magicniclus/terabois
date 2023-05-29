@@ -30,4 +30,21 @@ function writeUserData(
       });
   });
 }
-export { writeUserData };
+
+const subscribeAtNewsLetter = (email, userId) => {
+  return new Promise((resolve, reject) => {
+    set(ref(database, "newsLetter/" + userId), {
+      email,
+      date: new Date().toLocaleString(),
+    })
+      .then(() => {
+        resolve("success");
+        new Date().toLocaleString();
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
+};
+
+export { writeUserData, subscribeAtNewsLetter };
