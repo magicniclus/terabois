@@ -5,7 +5,6 @@ import BadgeChantier from "../badges/BadgeChantier";
 import { generateUniqueId } from "../../../utils/utils";
 import { writeUserData } from "../../../firebase/database";
 import { useRouter } from "next/router";
-import { set } from "firebase/database";
 
 const FormContent = (props) => {
   const router = useRouter();
