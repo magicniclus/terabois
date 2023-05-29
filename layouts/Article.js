@@ -3,9 +3,11 @@ import Footer from "../components/organisms/footer/Footer";
 import Head from "next/head";
 import posts from "../datas/posts";
 import GlobalNav from "../components/organisms/nav/GlobalNav";
+import Cookie from "../components/organisms/cookie/Cookie";
 
 const Article = (props) => {
   const data = props.data;
+
   return (
     <>
       <Head>
@@ -25,6 +27,7 @@ const Article = (props) => {
       <GlobalNav />
       <main className="bg-white min-h-[100vh] relative">{props.children}</main>
       <Footer />
+      <Cookie />
     </>
   );
 };
