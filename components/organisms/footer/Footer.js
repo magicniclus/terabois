@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { subscribeAtNewsLetter } from "../../../firebase/database";
+import { generateUniqueId } from "../../../utils/utils";
+import { useRouter } from "next/router";
 
 const navigation = {
   solutions: [
@@ -93,6 +96,23 @@ const navigation = {
 };
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+  const router = useRouter();
+
+  const handleSubmit = (e) => {
+    const userId = generateUniqueId();
+    e.preventDefault();
+    if (email === "" && !emailRegex.test(email)) return;
+    subscribeAtNewsLetter(email, userId)
+      .then((res) => {
+        router.push(`/remerciement`);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <footer className="bg-gray-800" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -187,7 +207,10 @@ const Footer = () => {
               Ne ratez rien de nos actualités et de nos promotions
             </p>
           </div>
-          <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
+          <form
+            className="mt-6 sm:flex sm:max-w-md lg:mt-0"
+            onSubmit={handleSubmit}
+          >
             <label htmlFor="email-address" className="sr-only">
               Adress email
             </label>
@@ -196,6 +219,8 @@ const Footer = () => {
               name="email-address"
               id="email-address"
               autoComplete="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
               className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-blueClear sm:w-56 sm:text-sm sm:leading-6"
               placeholder="Entrez votre email"
