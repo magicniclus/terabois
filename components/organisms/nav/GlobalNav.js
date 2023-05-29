@@ -250,11 +250,11 @@ const GlobalNav = () => {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-800">
+          <a
+            href="/entreprise"
+            className="text-sm font-semibold leading-6 text-gray-800"
+          >
             L'entreprise
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-800">
-            Qui sommes nous ?
           </a>
           <a
             href="#"
@@ -357,10 +357,10 @@ const GlobalNav = () => {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="/entreprise"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Qui sommes nous ?
+                  L'entreprise
                 </a>
 
                 <a
