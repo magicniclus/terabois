@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Footer from "../components/organisms/footer/Footer";
 import GlobalNav from "../components/organisms/nav/GlobalNav";
+import Cookie from "../components/organisms/cookie/Cookie";
 
 const Global = (props) => {
   const description = props.description || null;
@@ -21,6 +22,7 @@ const Global = (props) => {
       <GlobalNav />
       <main className="bg-white min-h-[100vh] relative">{props.children}</main>
       <Footer />
+      <Cookie />
     </>
   );
 };
