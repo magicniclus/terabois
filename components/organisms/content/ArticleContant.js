@@ -1,13 +1,22 @@
 import { getContent } from "../../../utils/getContent";
-import React from "react";
+import React, { useEffect } from "react";
 import { ClockIcon } from "@heroicons/react/24/outline";
 import BreadCrum from "../../molecules/breadCrum/BreadCrum";
 import BlogProposition from "./BlogProposition";
 import Cta from "../../organisms/cta/Cta";
 import BadgeAide from "../badges/BadgeAide";
+import { useDispatch } from "react-redux";
 
 const ArticleContant = (props) => {
   const data = props.data;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (data) {
+      dispatch({ type: "SET_POST_ID", payload: data.id });
+    }
+  }, [data]);
+
   return (
     <>
       <div>
