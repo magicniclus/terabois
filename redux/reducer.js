@@ -1,13 +1,13 @@
 const initState = {
-  cookie: false,
+  postId: "",
 };
 
 const reducer = (state = initState, action) => {
   switch (action.type) {
-    case "SET_COOKIE":
+    case "SET_POST_ID":
       return {
         ...state,
-        cookie: action.payload,
+        postId: action.payload,
       };
     default:
       return state;
