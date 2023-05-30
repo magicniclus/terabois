@@ -19,7 +19,8 @@ const index = () => {
           "Ossature bois",
           "Traitement bois",
         ]}
-        image="ite.jpeg"
+        image="https://images.pexels.com/photos/8817834/pexels-photo-8817834.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Charpente traditionnelle"
         badge={true}
         badgeChantier={false}
       />
