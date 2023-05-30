@@ -2,20 +2,15 @@ import React from "react";
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
-  ArrowPathIcon,
   ArrowUpRightIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  PlusIcon,
-  SquaresPlusIcon,
+  ArrowRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
+  CheckIcon,
   ChevronDownIcon,
   PhoneIcon,
-  PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 
 const products = [
@@ -23,69 +18,69 @@ const products = [
     name: "Isolation",
     description: "Get a better understanding of your traffic",
     href: "prestations/isolation-des-combles",
-    icon: ChartPieIcon,
+    icon: ArrowRightIcon,
   },
   {
     name: "ITE/ITI",
     description: "Speak directly to your customers",
     href: "prestations/isolation-des-murs",
-    icon: CursorArrowRaysIcon,
+    icon: ArrowRightIcon,
   },
   {
     name: "Terrasse bois",
     description: "Your customers’ data will be safe and secure",
     href: "prestations/terrasse-bois",
-    icon: FingerPrintIcon,
+    icon: ArrowRightIcon,
   },
   {
     name: "Ossature bois",
     description: "Connect with third-party tools",
     href: "prestations/ossature-bois",
-    icon: SquaresPlusIcon,
+    icon: ArrowRightIcon,
   },
   {
     name: "Bardage",
     description: "Build strategic funnels that will convert",
     href: "prestations/ossature-bois",
-    icon: ArrowPathIcon,
+    icon: ArrowRightIcon,
   },
   {
     name: "Charpente couverture",
     description: "Build strategic funnels that will convert",
     href: "prestations/ossature-bois",
-    icon: ArrowPathIcon,
+    icon: ArrowRightIcon,
   },
 ];
 
 const callsToAction = [
-  { name: "Prendre rendez-vous", href: "#", icon: PlayCircleIcon },
-  { name: "Contact", href: "#", icon: PhoneIcon },
+  { name: "Prendre rendez-vous", href: "/contact", icon: CheckIcon },
+  { name: "Contact", href: "/contact", icon: PhoneIcon },
 ];
 
 const company = [
   {
     name: "Tous savoir sur l'isolation des combles",
     href: "/articles/conseils-travaux/isolation-des-combles-a-bordeaux-avec-terabois",
-    icon: SquaresPlusIcon,
+    icon: ArrowRightIcon,
     description:
       "Découvrez comment notre expertise en isolation des combles peut améliorer votre confort.",
   },
   {
     name: "Terrasse en Bois à Bordeaux",
     href: "/articles/conseils-travaux/terrasse-en-bois-a-bordeaux-avec-terabois",
-    icon: SquaresPlusIcon,
+    icon: ArrowRightIcon,
     description: "Comment choisir sa terrasse en bois ?",
   },
   {
     name: "Choisir son couvreur à Bordeaux",
     href: "/articles/conseils-travaux/couvreurs-bordeaux-avec-terabois",
-    icon: SquaresPlusIcon,
+    icon: ArrowRightIcon,
     description: "Pour une toiture durable et de qualité.",
   },
   {
     name: "Isolation des murs à Bordeaux",
     href: "/articles/conseils-travaux/isolation-des-combles-a-bordeaux-avec-terabois",
-    icon: SquaresPlusIcon,
+    icon: ArrowRightIcon,
     description: "Isolation exterieur ou interieur, quelle solution choisir ?",
   },
 ];
