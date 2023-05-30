@@ -18,7 +18,7 @@ const index = () => {
           "isolation des murs interieurs (ITI)",
           "Isolation des murs exterieurs (ITE)",
         ]}
-        image="ite.jpeg"
+        image="/img/prestations/ite.jpeg"
         badge={true}
         badgeChantier={false}
       />
