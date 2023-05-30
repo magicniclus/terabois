@@ -11,6 +11,7 @@ const EntrepriseContent = () => {
               src="https://images.unsplash.com/photo-1634586621169-93e12e0bd604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ciVDMyVBOW5vdmF0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
               alt="renovation"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 hidden lg:flex"></div>
           </div>
         </div>
         <div className="px-6 lg:contents">
