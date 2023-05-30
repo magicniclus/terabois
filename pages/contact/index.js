@@ -28,8 +28,8 @@ const index = () => {
           "Terrasse bois",
           "Rénovation globale",
         ]}
-        image="https://www.pexels.com/fr-fr/photo/homme-portant-un-pantalon-en-denim-noir-avec-marteau-de-transport-sur-l-etui-8092/"
-        alt="Isolation des combles"
+        image="https://images.pexels.com/photos/8092/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Rénovation de maison"
         badge={true}
         badgeChantier={false}
       />
