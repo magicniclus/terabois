@@ -71,7 +71,7 @@ const Hero = () => {
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Isolation des combles | Isolation murs interieurs/exterieurs |
                   Ossature bois | Terrasse bois | Bardage | Couverture |
-                  Chapente
+                  Charpente
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
