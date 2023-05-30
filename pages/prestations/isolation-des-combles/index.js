@@ -18,7 +18,8 @@ const index = () => {
           "Isolation sous rampant",
           "Isolation sous toiture",
         ]}
-        image="isolation.jpeg"
+        image="/img/prestations/isolation.jpeg"
+        alt="Isolation des combles"
         badge={true}
         badgeChantier={false}
       />
