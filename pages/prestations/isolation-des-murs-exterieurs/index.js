@@ -15,7 +15,7 @@ const index = () => {
           "Entreprise certifiée RGE Qualibat",
         ]}
         prestations={["Isolation des murs exterieurs (ITE)"]}
-        image="ite.jpeg"
+        image="/img/prestations/ite.jpeg"
         badge={true}
         badgeChantier={false}
       />
