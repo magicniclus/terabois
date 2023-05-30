@@ -17,8 +17,9 @@ const navigation = {
     { name: "Terrasse bois", href: "/prestations/terrasse-bois" },
   ],
   contact: [
-    { name: "Nous contacter", href: "#" },
-    { name: "Job", href: "#" },
+    { name: "Nous contacter", href: "/contact" },
+    { name: "Mon espace", href: "/connexion" },
+    // { name: "Job", href: "#" },
   ],
   entreprise: [
     { name: "L'entreprise", href: "/entreprise" },
