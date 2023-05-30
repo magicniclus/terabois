@@ -15,7 +15,7 @@ const index = () => {
           "Plus de 3000 réalisations",
         ]}
         prestations={["Terrasse bois"]}
-        image="terrasse.jpeg"
+        image="/img/prestations/terrasse.jpeg"
         badge={true}
       />
     </Blog>
