@@ -22,8 +22,8 @@ const ArticleContant = (props) => {
       <div>
         <BreadCrum slug={data.slug} />
       </div>
-      <div className="w-full mx-auto max-w-7xl px-6 lg:px-8 flex  py-5">
-        <div className="w-7/12 pr-8">
+      <div className="w-full mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row py-5">
+        <div className="w-full lg:w-7/12 lg:pr-8 order-2 lg:order-1">
           <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl">
             {data.title}
           </h1>
@@ -67,7 +67,7 @@ const ArticleContant = (props) => {
             </a>
           </div>
         </div>
-        <div className="w-5/12">
+        <div className="w-full lg:w-5/12 mb-10 lg:mb-0 order-1 lg:order-2">
           <div className=" p-10 px-16 w-full border-slate-800 rounded-xl h-min bg-gray-50 ring-1 ring-inset ring-gray-900/5">
             <div>
               <h2 className="text-lg lg:text-xl font-semibold text-gray-800">
@@ -89,7 +89,7 @@ const ArticleContant = (props) => {
               </h3>
             </div>
           </div>
-          <div className="mt-16 flex flex-col items-center p-10 px-16 bg-gradient-to-b from-cyan-500 to-gray-600 rounded-xl  ring-1 ring-inset ring-gray-900/5 text-center shadow-xl">
+          <div className="mt-16  lg:flex flex-col items-center p-10 px-16 bg-gradient-to-b from-cyan-500 to-gray-600 rounded-xl  ring-1 ring-inset ring-gray-900/5 text-center shadow-xl hidden ">
             <h2 className="text-normal lg:text-lg font-bold text-white mt-4">
               Vous souhaitez isoler, rénover ou aménager votre maison?
             </h2>
