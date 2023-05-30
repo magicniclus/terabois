@@ -26,9 +26,12 @@ const navigation = {
     { name: "F.A.Q", href: "/faq" },
   ],
   legal: [
-    { name: "Politique de confidentialité", href: "#" },
-    { name: "Conditions d'utilisation", href: "#" },
-    { name: "Conditions générales de vente", href: "#" },
+    {
+      name: "Politique de confidentialité",
+      href: "/politique-de-confidentialite",
+    },
+    { name: "Conditions d'utilisation", href: "/conditions-utilisation" },
+    { name: "Mentions légales", href: "mentions-legales" },
   ],
   social: [
     {
