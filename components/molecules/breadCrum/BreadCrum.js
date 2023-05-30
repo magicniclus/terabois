@@ -14,7 +14,7 @@ const BreadCrum = (props) => {
   ];
   return (
     <div
-      className="flex w-full mx-auto max-w-7xl px-6 lg:px-8 py-5"
+      className="lg:flex w-full mx-auto max-w-7xl px-6 lg:px-8 py-5 hidden"
       aria-label="Breadcrumb"
     >
       <ol role="list" className="flex items-center space-x-4">
