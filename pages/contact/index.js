@@ -17,14 +17,19 @@ const index = () => {
           "isolation des combles perdues",
           "Isolation sous rampant",
           "Isolation sous toiture",
+          "Isolation des murs intérieurs (ITI)",
+          "Isolation des murs extérieurs (ITE)",
           "Charpente",
           "Couverture",
+          "Nettoyage de toiture",
           "Zinguerie",
           "Ossature bois",
           "Bardage",
           "Terrasse bois",
+          "Rénovation globale",
         ]}
-        image="photo-iti.jpg"
+        image="https://www.pexels.com/fr-fr/photo/homme-portant-un-pantalon-en-denim-noir-avec-marteau-de-transport-sur-l-etui-8092/"
+        alt="Isolation des combles"
         badge={true}
         badgeChantier={false}
       />
