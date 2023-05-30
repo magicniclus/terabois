@@ -149,7 +149,7 @@ const posts = {
         url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Isolation des Combles TeraBois",
       },
-      date: "May 24, 2023",
+      date: "24 mai, 2023",
       description:
         "TeraBois, votre entreprise d'isolation à Bordeaux, offre des solutions d'isolation de qualité. Découvrez comment notre expertise peut améliorer votre confort thermique et vous aider à réaliser des économies d'énergie.",
       category: {
