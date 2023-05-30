@@ -37,7 +37,7 @@ const ArticleContant = (props) => {
               Vous souhaitez en savoir plus sur le sujet?
             </h3>
             <a
-              href="#"
+              href="/contact"
               className="rounded-md bg-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blueClear focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blueClear mt-5"
             >
               Prendre rendez-vous
@@ -60,7 +60,7 @@ const ArticleContant = (props) => {
             ))}
           <div className="mt-10 items-center gap-x-6 flex flex-col ">
             <a
-              href="#"
+              href="/contact"
               className="rounded-md bg-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blueClear focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blueClear mt-5"
             >
               Prendre rendez-vous
