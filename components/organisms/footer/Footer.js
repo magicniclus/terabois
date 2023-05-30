@@ -10,11 +10,21 @@ const navigation = {
       href: "/prestations/isolation-des-combles",
     },
     {
-      name: "Isolation des murs interieurs(ITI)/exterieurs(ITE)",
-      href: "/prestations/isolation-des-murs",
+      name: "Isolation des murs exterieurs(ITE)",
+      href: "/prestations/isolation-des-murs-exterieurs",
     },
-    { name: "Ossature bois - Bardage", href: "/prestations/ossature-bois" },
+    {
+      name: "Isolation des murs interieurs(ITI)",
+      href: "/prestations/isolation-des-murs-interieurs",
+    },
+    { name: "Ossature bois, Bardage", href: "/prestations/ossature-bois" },
     { name: "Terrasse bois", href: "/prestations/terrasse-bois" },
+    { name: "Couverture", href: "/prestations/couverture" },
+    {
+      name: "Nettoyage de couverture",
+      href: "/prestations/nettoyage-de-couverture",
+    },
+    { name: "Charpente", href: "/prestations/charpente" },
   ],
   contact: [
     { name: "Nous contacter", href: "/contact" },
