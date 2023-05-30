@@ -19,6 +19,7 @@ const index = () => {
           "Isolation des murs exterieurs (ITE)",
         ]}
         image="/img/prestations/ite.jpeg"
+        alt="Isolation des murs exterieurs"
         badge={true}
         badgeChantier={false}
       />
