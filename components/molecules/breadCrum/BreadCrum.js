@@ -7,7 +7,7 @@ const BreadCrum = (props) => {
     { name: "Articles", href: "/articles", current: false },
     {
       name: "Conseils-travaux",
-      href: "/articles/conseils-travaux",
+      href: "/articles",
       current: false,
     },
     { name: slug, href: "/articles/conseils-travaux/" + slug, current: true },
