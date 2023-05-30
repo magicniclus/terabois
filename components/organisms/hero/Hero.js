@@ -26,7 +26,7 @@ const Hero = () => {
           </a>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end ml-5">
             <a
-              href="#"
+              href="/connexion"
               className="text-sm font-semibold leading-6 text-gray-800"
             >
               <UserCircleIcon className="h-9 w-9 flex-none text-blue" />
