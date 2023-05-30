@@ -21,7 +21,8 @@ const index = () => {
           "Réparation de toiture",
           "Nettoyage de toiture",
         ]}
-        image="ite.jpeg"
+        image="https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+        alt="Couverture en tuiles"
         badge={true}
         badgeChantier={false}
       />
