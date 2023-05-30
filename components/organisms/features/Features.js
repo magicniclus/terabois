@@ -7,9 +7,14 @@ const prestations = [
     icon: "./img/prestations/isolationcombles.jpg",
   },
   {
-    name: "Isolation des murs exterieurs/intérieurs",
-    href: "/prestations/isolation-des-murs",
+    name: "Isolation des murs exterieurs (ITE)",
+    href: "/prestations/isolation-des-murs-exterieurs",
     icon: "./img/prestations/ext-two.jpg",
+  },
+  {
+    name: "Isolation des murs interieurs (ITI)",
+    href: "/prestations/isolation-des-murs-interieurs",
+    icon: "./img/prestations/iti.jpeg",
   },
   {
     name: "Ossature bois, bardage",
@@ -19,7 +24,22 @@ const prestations = [
   {
     name: "Terrasse bois",
     href: "/prestations/terrasse-bois",
-    icon: "https://images.unsplash.com/photo-1624409990662-03f19cc0e0cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+    icon: "./img/prestations/terrasse.jpeg",
+  },
+  {
+    name: "Couverture",
+    href: "/prestations/couverture",
+    icon: "https://images.unsplash.com/photo-1586633699106-4f37b4f46cd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+  },
+  {
+    name: "Nettoyage de couverture",
+    href: "/prestations/nettoyage-de-couverture",
+    icon: "./img/prestations/traitement.jpeg",
+  },
+  {
+    name: "Charpente",
+    href: "/prestations/charpente",
+    icon: "https://images.pexels.com/photos/8817834/pexels-photo-8817834.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
 ];
 
