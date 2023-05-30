@@ -371,8 +371,8 @@ const posts = {
       metaDescription:
         "Découvrez les terrasses en bois haut de gamme de TeraBois à Bordeaux. Profitez dd'une qualité exceptionnelle, d'un service irréprochable et d'un investissement durable. Contactez-nous pour réaliser la terrasse de vos rêves.",
       image: {
-        url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Isolation des Combles TeraBois",
+        url: "https://images.unsplash.com/photo-1617850687395-620757feb1f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVycmFzc2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
+        alt: "Terrasse en bois",
       },
       date: "24 mai, 2023",
       description:
@@ -475,8 +475,8 @@ const posts = {
       metaDescription:
         "TeraBois est votre couvreur de confiance à Bordeaux, offrant des services de qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous pour découvrir comment nous pouvons améliorer votre toit.",
       image: {
-        url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Isolation des Combles TeraBois",
+        url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        alt: "Toiture bordelaise",
       },
       date: "24 mai, 2023",
       description:
@@ -584,8 +584,8 @@ const posts = {
       metaDescription:
         "TeraBois est votre entreprise de couvreurs à Bordeaux, proposant des services de haute qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous et découvrez comment nous pouvons optimiser votre confort et votre sécurité.",
       image: {
-        url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Isolation des Combles TeraBois",
+        url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        alt: "Toiture bordelaise",
       },
       date: "24 mai, 2023",
       description:
@@ -684,8 +684,8 @@ const posts = {
       metaDescription:
         "TeraBois, votre couvreur zingueur à Bordeaux, propose un service de haute qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous et découvrez comment nous pouvons améliorer le confort et la sécurité de votre maison.",
       image: {
-        url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Isolation des Combles TeraBois",
+        url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        alt: "Toiture bordelaise",
       },
       date: "24 mai, 2023",
       description:
@@ -795,8 +795,8 @@ const posts = {
       metaDescription:
         "Optez pour TeraBois, votre couvreur à Bordeaux, pour un service de haute qualité en réparation, remplacement et entretien de votre toiture. Découvrez notre engagement pour votre satisfaction et la sécurité de votre maison.",
       image: {
-        url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Isolation des Combles TeraBois",
+        url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        alt: "Toiture bordelaise",
       },
       date: "24 mai, 2023",
       description:
@@ -873,8 +873,8 @@ const posts = {
       metaDescription:
         "TeraBois est votre couvreur de choix à Mérignac, proposant une gamme complète de services pour répondre à tous vos besoins en matière de toiture. Faites confiance à notre expertise et notre engagement envers l'excellence.",
       image: {
-        url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Isolation des Combles TeraBois",
+        url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        alt: "Toiture merignac",
       },
       date: "24 mai, 2023",
       description:
@@ -947,8 +947,8 @@ const posts = {
       metaDescription:
         "Découvrez TeraBois, votre couvreur à Pessac, et comprenez pourquoi nous sommes le choix préféré pour vos travaux de toiture. Notre expertise, notre souci de la qualité et notre engagement envers la satisfaction du client nous distinguent. Faites appel à TeraBois pour une toiture durable et de qualité.",
       image: {
-        url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        alt: "Isolation des Combles TeraBois",
+        url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        alt: "Toiture Pessac",
       },
       date: "24 mai, 2023",
       description:
