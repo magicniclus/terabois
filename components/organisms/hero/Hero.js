@@ -53,7 +53,7 @@ const Hero = () => {
                   <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-800/10 hover:ring-gray-800/20">
                     L'histoire de l'entreprise et de son fondateur{" "}
                     <a
-                      href="#"
+                      href="/entreprise"
                       className="whitespace-nowrap font-semibold text-blue"
                     >
                       <span className="absolute inset-0" aria-hidden="true" />
@@ -74,7 +74,7 @@ const Hero = () => {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="/contact"
                     className="rounded-md bg-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blueClear focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Prendre rendez-vous
@@ -101,7 +101,7 @@ const Hero = () => {
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto h-full w-full relative"
             src="/img/houses/top_768.jpg"
-            alt=""
+            alt="maison"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 hidden lg:flex"></div>
         </div>
