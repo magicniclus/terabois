@@ -19,7 +19,7 @@ const index = () => {
           "Nettoyage de couverture en zinc",
           "Entretien de toiture",
         ]}
-        image="ite.jpeg"
+        image="./img/prestations/traitement.jpeg"
         badge={true}
         badgeChantier={false}
       />
