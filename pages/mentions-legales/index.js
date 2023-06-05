@@ -30,7 +30,10 @@ const index = () => {
           Email : casterafranck.contact@gmail.com
         </p>
         <p className="text-nomral font-normal mt-5">
-          Directeur de la publication : Mr Castera
+          Directeur de la publication : Mr Castera{" "}
+          <a className="underline" href="https://www.adsventure-agency.com/">
+            Agence Adsventure
+          </a>
         </p>
         <p className="text-nomral font-normal mt-5">
           Le site est hébergé par OVH, dont le siège social est situé à 2 rue
