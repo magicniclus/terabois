@@ -4,7 +4,7 @@ import Remerciement from "../../components/organisms/content/Remerciement";
 
 const index = () => {
   return (
-    <Global>
+    <Global title="" description="" tags="">
       <Remerciement />
     </Global>
   );
