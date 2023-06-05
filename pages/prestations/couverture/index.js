@@ -4,7 +4,11 @@ import FormContent from "../../../components/organisms/formContent/FormContent";
 
 const index = () => {
   return (
-    <Blog>
+    <Blog
+      title="RDV Couverture Terabois : Expert en Couverture à Bordeaux"
+      description="Programmez un RDV pour votre projet de couverture avec Terabois, expert en amélioration de l'habitat à Bordeaux et Gironde. Protégez votre maison efficacement."
+      tags="RDV Couverture Terabois, Expert Couverture, Amélioration Habitat, Isolation, Rénovation, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <FormContent
         title="Couvreur en gironde"
         description="TeraBois est votre expert de confiance pour toutes vos exigences en matière de couverture. Nous combinons expertise technique et savoir-faire pour fournir des solutions de couverture durables et de qualité supérieure. Faites confiance à TeraBois pour une couverture résistante qui protègera efficacement votre maison."
