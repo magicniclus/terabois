@@ -11,7 +11,7 @@ const index = () => {
     >
       <FormContent
         title="Isolation des murs exterieurs"
-        description="Terabois garantit une isolation intérieure et extérieure de qualité pour plus de confort et d'économies d'énergie. Bénéficiez des aides de l'État pour un habitat performant et écologique."
+        description="Terabois garantit une isolation des murs intérieurs et extérieurs de qualité pour plus de confort et d'économies d'énergie. Bénéficiez des aides de l'État pour un habitat performant et écologique."
         avantages={[
           "L'entreprise n°1 en Gironde pour l'isolation des murs exterieurs",
           "Jusqu'à 80% d'aide de l'état sur vos travaux d'isolation",
