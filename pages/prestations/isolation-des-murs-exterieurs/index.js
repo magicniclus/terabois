@@ -4,7 +4,11 @@ import FormContent from "../../../components/organisms/formContent/FormContent";
 
 const index = () => {
   return (
-    <Blog>
+    <Blog
+      title="RDV Isolation Murs Extérieurs Terabois : Expert Bordeaux"
+      description="Fixez un RDV pour l'isolation des murs extérieurs avec Terabois, l'expert en rénovation à Bordeaux et Gironde. Optimisez votre efficacité énergétique."
+      tags="RDV Isolation Murs Extérieurs Terabois, Isolation Murs Extérieurs, Expert Isolation, Rénovation, Couverture, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <FormContent
         title="Isolation des murs exterieurs"
         description="Terabois garantit une isolation intérieure et extérieure de qualité pour plus de confort et d'économies d'énergie. Bénéficiez des aides de l'État pour un habitat performant et écologique."
