@@ -80,7 +80,7 @@ const index = () => {
         <p className="text-nomral font-normal mt-5">
           Pour exercer ces droits, ou pour toute question ou préoccupation
           concernant cette politique de confidentialité, veuillez nous contacter
-          à [adresse e-mail de l'entreprise].
+          à contact@terabois.fr.
         </p>
         <h2 className="text-2xl font-bold tracking-tight text-gray-800 sm:text-3xl  mt-16">
           Changements à cette politique de confidentialité
@@ -106,7 +106,7 @@ const index = () => {
         </p>
         <p className="text-nomral font-normal mt-5">
           Pour toute question relative à notre politique de confidentialité,
-          n'hésitez pas à nous contacter à [adresse e-mail de l'entreprise].
+          n'hésitez pas à nous contacter à contact@terabois.fr.
         </p>
       </div>
     </Global>
