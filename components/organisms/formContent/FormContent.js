@@ -217,7 +217,7 @@ const FormContent = (props) => {
                         setName
                       )
                     }
-                    className={`block w-full rounded-md px-3.5 py-2 border-0 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
+                    className={`block w-full rounded-md px-3.5 py-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 border-gray-400 ${
                       !isFirstNameValid ? "ring-red-500" : "ring-gray-300"
                     }`}
                   />
@@ -245,7 +245,7 @@ const FormContent = (props) => {
                         setLastname
                       )
                     }
-                    className={`block w-full rounded-md border-0 px-3.5 py-2 text-gray-800 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
+                    className={`block w-full rounded-md border-gray-400 px-3.5 py-2 text-gray-800 shadow-sm ring-1 ring-inset placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
                       !isLastNameValid ? "ring-red-500" : "ring-gray-300"
                     }`}
                   />
@@ -273,7 +273,7 @@ const FormContent = (props) => {
                         setEmail
                       )
                     }
-                    className={`block w-full rounded-md px-3.5 py-2 border-0 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
+                    className={`block w-full rounded-md px-3.5 py-2 border-gray-400 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
                       !isEmailValid ? "ring-red-500" : "ring-gray-300"
                     }`}
                   />
@@ -301,7 +301,7 @@ const FormContent = (props) => {
                         setPhone
                       )
                     }
-                    className={`block w-full rounded-md px-3.5 py-2 border-0 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
+                    className={`block w-full rounded-md px-3.5 py-2 border-gray-400 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
                       !isPhoneValid ? "ring-red-500" : "ring-gray-300"
                     }`}
                   />
@@ -329,7 +329,7 @@ const FormContent = (props) => {
                         setZipCode
                       )
                     }
-                    className={`block w-full rounded-md px-3.5 py-2 border-0 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
+                    className={`block w-full rounded-md px-3.5 py-2 border-gray-400 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 ${
                       !isZipCodeValid ? "ring-red-500" : "ring-gray-300"
                     }`}
                   />
@@ -346,7 +346,7 @@ const FormContent = (props) => {
                   <select
                     required
                     onChange={(event) => validateSelector(event.target.value)}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-gray-400 px-3.5 py-2 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                   >
                     <option value="" disabled selected>
                       Selectionnez une prestation
