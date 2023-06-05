@@ -16,26 +16,25 @@ const index = () => {
           Informations Générales
         </h2>
         <p className="text-nomral font-normal mt-5">
-          Le présent site web, accessible à l'adresse [URL du site web de
-          l'entreprise], est la propriété de TeraBois, une entreprise
-          spécialisée dans la rénovation de l'habitat basée à Bordeaux.
+          Le présent site web, accessible à l'adresse www.terabois.fr, est la
+          propriété de TeraBois, une entreprise spécialisée dans la rénovation
+          de l'habitat basée à Bordeaux.
         </p>
         <p className="text-nomral font-normal mt-5">
-          TeraBois est une [forme juridique de l'entreprise] dont le siège
-          social est situé à [adresse du siège social de l'entreprise], inscrite
-          au registre du commerce et des sociétés de [ville] sous le numéro
-          [numéro d'inscription].
+          TeraBois est une SASU dont le siège social est situé à 36 avenue
+          Francois Mitterrand 33270 Floirac, inscrite au registre du commerce et
+          des sociétés de Bordeaux sous le numéro 848 564 464 00016.
         </p>
         <p className="text-nomral font-normal mt-5">
-          Téléphone : [numéro de téléphone de l'entreprise] <br />
-          Email : [adresse e-mail de l'entreprise]
+          Téléphone : 06 49 23 13 80 <br />
+          Email : casterafranck.contact@gmail.com
         </p>
         <p className="text-nomral font-normal mt-5">
           Directeur de la publication : [nom du directeur de la publication]
         </p>
         <p className="text-nomral font-normal mt-5">
-          Le site est hébergé par [nom de l'hébergeur], dont le siège social est
-          situé à [adresse du siège social de l'hébergeur].
+          Le site est hébergé par OVH, dont le siège social est situé à [adresse
+          du siège social de l'hébergeur].
         </p>
         <h2 className="text-2xl font-bold tracking-tight text-gray-800 sm:text-3xl  mt-16">
           Propriété Intellectuelle
