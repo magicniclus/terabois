@@ -23,6 +23,7 @@ const Article = (props) => {
             "https://www.terabois.fr/articles/conseils-travaux/" + data.slug
           }
         />
+        <link rel="icon" href="/img/logos/logo.png" />
       </Head>
       <GlobalNav />
       <main className="bg-white min-h-[100vh] relative">{props.children}</main>
