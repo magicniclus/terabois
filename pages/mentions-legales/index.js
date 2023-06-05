@@ -30,11 +30,11 @@ const index = () => {
           Email : casterafranck.contact@gmail.com
         </p>
         <p className="text-nomral font-normal mt-5">
-          Directeur de la publication : [nom du directeur de la publication]
+          Directeur de la publication : Mr Castera
         </p>
         <p className="text-nomral font-normal mt-5">
-          Le site est hébergé par OVH, dont le siège social est situé à [adresse
-          du siège social de l'hébergeur].
+          Le site est hébergé par OVH, dont le siège social est situé à 2 rue
+          Kellermann - 59100 Roubaix - France.
         </p>
         <h2 className="text-2xl font-bold tracking-tight text-gray-800 sm:text-3xl  mt-16">
           Propriété Intellectuelle
