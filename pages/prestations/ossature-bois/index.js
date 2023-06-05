@@ -4,7 +4,11 @@ import FormContent from "../../../components/organisms/formContent/FormContent";
 
 const index = () => {
   return (
-    <Blog>
+    <Blog
+      title="RDV pour Extension Ossature Bois avec Terabois, Bordeaux"
+      descritpion="Prenez RDV pour l'agrandissement ou la création d'extension en ossature bois. Terabois, votre partenaire pour une maison plus grande à Bordeaux et Gironde."
+      tags="RDV Extension Ossature Bois, Agrandissement Maison, Création Extension, Terabois, Isolation, Couverture, Charpente, Terrasse bois, Extension ossature, Bordeaux, Gironde"
+    >
       <FormContent
         description="Avec Terabois, donnez vie à vos projets de bardage, extension ou agrandissement en bois, alliant esthétique et durabilité. Nous vous garantissons un travail de qualité pour un habitat qui vous ressemble."
         avantages={[
