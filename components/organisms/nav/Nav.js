@@ -362,14 +362,14 @@ const Nav = (props) => {
                 </a>
 
                 <a
-                  href="#"
+                  href="tel:0649231380"
                   className="-mx-3 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue hover:text-blueClear hover:bg-gray-50 flex items-center"
                 >
                   <PhoneIcon
                     className="h-5 w-5 flex-none text-blue hover:text-blueClear mr-2"
                     aria-hidden="true"
                   />
-                  0631420045
+                  06 49 23 13 80
                 </a>
               </div>
               <div className="py-6">
