@@ -16,11 +16,11 @@ const Article = (props) => {
         <meta name="robots" content={"index, " + data.robots} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="language" content="fr" />
+        <meta name="keywords" content={data.tags} />
         <link
           rel="canonical"
           href={
-            "https://www.terabois.fr/articles/conseils-travaux/" +
-            data.canonical
+            "https://www.terabois.fr/articles/conseils-travaux/" + data.slug
           }
         />
       </Head>
