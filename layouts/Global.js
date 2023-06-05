@@ -21,6 +21,7 @@ const Global = (props) => {
         <meta name="language" content="fr" />
         <link rel="canonical" href={"https://www.terabois.fr/" + canonical} />
         <meta name="keywords" content={tags} />
+        <link rel="icon" href="/img/logos/logo.png" />
       </Head>
       <GlobalNav />
       <main className="bg-white min-h-[100vh] relative">{props.children}</main>
