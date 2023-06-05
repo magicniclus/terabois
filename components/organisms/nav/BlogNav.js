@@ -24,11 +24,11 @@ const BlogNav = (props) => {
           </div>
           <div className="top-5 right-11 text-white hidden lg:flex">
             <a
-              href="#"
+              href="tel:0649231380"
               className="lg:flex items-center text-lg font-bold leading-6 bg-blue hover:bg-blueClear  px-4 py-2 rounded-lg"
             >
               <PhoneIcon className="h-5 w-5 flex-none text-white mr-2" />
-              +33631420045
+              06 49 23 13 80
             </a>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end ml-5">
               <a
