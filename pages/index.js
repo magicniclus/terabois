@@ -13,7 +13,7 @@ export default function Home() {
     >
       <Features />
       <BlogContent />
-      <Testamonials />
+      {/* <Testamonials /> */}
       <Cta />
     </Basic>
   );
