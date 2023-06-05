@@ -2,10 +2,9 @@ const posts = {
   conseilsTravaux: [
     {
       id: 1,
-      imageUrl: "image",
-      title:
-        "TeraBois : Expert en Isolation à Bordeaux pour un Confort Optimal",
+      title: "Terabois à Bordeaux : Expert en Isolation pour un Habitat Sain",
       slug: "terabois-isolation-bordeaux",
+      tags: "Terabois, Isolation, Combles, Sous Toiture, Murs Intérieurs, Murs Extérieurs, Habitat, Amélioration, Bordeaux",
       content: [
         {
           tag: "h2",
@@ -56,14 +55,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "Découvrez comment TeraBois, expert en isolation à Bordeaux, améliore le confort thermique de votre maison grâce à des solutions d'isolation des combles et des murs haut de gamme. Faites confiance à notre expertise pour des résultats durables et efficaces.",
+        "Confiez l'isolation de votre maison à Terabois, votre expert à Bordeaux. De l'isolation des combles aux murs, nous améliorons le confort de votre habitat.",
       image: {
         url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Isolation des Combles TeraBois",
       },
       date: "24 mai, 2023",
-      description:
-        "Découvrez TeraBois, votre partenaire de confiance pour l'isolation à Bordeaux, offrant des solutions d'isolation des combles et des murs haut de gamme pour améliorer le confort thermique de votre maison.",
       category: { title: "Construction", href: "construction" },
       author: {
         name: "TeraBois",
@@ -81,10 +78,9 @@ const posts = {
     },
     {
       id: 2,
-      imageUrl: "image",
-      headTitle: "TeraBois : Votre Entreprise d'Isolation Expert à Bordeaux",
-      title: "TeraBois : Votre Entreprise d'Isolation Expert à Bordeaux",
-      slug: "terabois-isolation-bordeaux",
+      title: "Terabois: Entreprise Leader en Isolation à Bordeaux",
+      slug: "terabois-entreprise-isolation-bordeaux",
+      tags: "Terabois, Entreprise, Isolation, Combles, Murs, Toiture, Rénovation, Habitat, Bordeaux",
       content: [
         {
           tag: "h2",
@@ -144,14 +140,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "TeraBois, votre entreprise d'isolation à Bordeaux, propose des solutions d'isolation thermique de qualité pour votre maison. Découvrez comment notre expertise en isolation des combles et des murs peut améliorer votre confort et vous faire économiser de l'énergie.",
+        "Terabois, votre entreprise d'isolation à Bordeaux. Nous offrons des services d'isolation complète et de rénovation pour un habitat plus confortable.",
       image: {
         url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Isolation des Combles TeraBois",
       },
       date: "24 mai, 2023",
-      description:
-        "TeraBois, votre entreprise d'isolation à Bordeaux, offre des solutions d'isolation de qualité. Découvrez comment notre expertise peut améliorer votre confort thermique et vous aider à réaliser des économies d'énergie.",
       category: {
         title: "Construction",
         href: "construction",
@@ -173,10 +167,9 @@ const posts = {
     },
     {
       id: 3,
-      imageUrl: "image",
-      title:
-        "Isolation des Combles à Bordeaux : Faites confiance à TeraBois pour un Confort Optimal",
+      title: "Isolation des Combles à Bordeaux - Expertise de Terabois",
       slug: "isolation-des-combles-a-bordeaux-avec-terabois",
+      tags: "Terabois, Isolation, Combles, Bordeaux, Amélioration, Habitat, Eco-responsable, Expert",
       content: [
         {
           tag: "h2",
@@ -283,14 +276,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "Optez pour TeraBois pour une isolation de combles supérieure à Bordeaux. Découvrez comment nos solutions d'isolation personnalisées peuvent améliorer votre confort et réduire vos factures d'énergie.",
+        "Améliorez votre confort avec Terabois, expert en isolation des combles à Bordeaux. Pour un habitat chaleureux et éco-responsable, faites confiance à Terabois.",
       image: {
         url: "https://images.unsplash.com/photo-1591684080176-bb2b73f9ec68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         alt: "Isolation des Combles TeraBois",
       },
       date: "24 mai, 2023",
-      description:
-        "Optez pour TeraBois pour une isolation de combles supérieure à Bordeaux. Découvrez comment nos solutions d'isolation personnalisées peuvent améliorer votre confort et réduire vos factures d'énergie.",
       category: { title: "Construction", href: "construction" },
       author: {
         name: "TeraBois",
@@ -307,10 +298,9 @@ const posts = {
     },
     {
       id: 4,
-      imageUrl: "image",
-      title:
-        "Terrasse en Bois à Bordeaux : TeraBois, l'Expert pour votre Espace de Vie Extérieur",
+      title: "Terrasse en Bois à Bordeaux - Réalisation par Terabois",
       slug: "terrasse-en-bois-a-bordeaux-avec-terabois",
+      tags: "Terrasse en Bois, Bordeaux, Terabois, Habitat, Extension, Durable, Expertise",
       content: [
         {
           tag: "h2",
@@ -369,14 +359,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "Découvrez les terrasses en bois haut de gamme de TeraBois à Bordeaux. Profitez dd'une qualité exceptionnelle, d'un service irréprochable et d'un investissement durable. Contactez-nous pour réaliser la terrasse de vos rêves.",
+        "Créez un espace extérieur élégant avec Terabois, expert en terrasse en bois à Bordeaux. Pour une extension de votre habitat chaleureuse et durable, faites confiance à notre expertise.",
       image: {
         url: "https://images.unsplash.com/photo-1617850687395-620757feb1f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVycmFzc2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
         alt: "Terrasse en bois",
       },
       date: "24 mai, 2023",
-      description:
-        "Découvrez les terrasses en bois haut de gamme de TeraBois à Bordeaux. Profitez d'une qualité exceptionnelle, d'un service irréprochable et d'un investissement durable. Contactez-nous pour réaliser la terrasse de vos rêves.",
       category: { title: "Construction", href: "construction" },
       author: {
         name: "TeraBois",
@@ -393,10 +381,9 @@ const posts = {
     },
     {
       id: 5,
-      imageUrl: "image",
-      title:
-        "Couvreur Bordeaux : Faites confiance à TeraBois pour une Toiture de Qualité",
+      title: "Couvreur Bordeaux: Terabois, votre partenaire de confiance",
       slug: "couvreur-bordeaux-terabois-votre-partenaire-de-confiance",
+      tags: "Couvreur, Bordeaux, Terabois, Partenaire, Confiance, Travaux, Couverture, Toiture, Fiable, Durable, Expérimentée",
       content: [
         {
           tag: "h2",
@@ -473,14 +460,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "TeraBois est votre couvreur de confiance à Bordeaux, offrant des services de qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous pour découvrir comment nous pouvons améliorer votre toit.",
+        "Terabois, couvreur expert à Bordeaux, se charge de vos travaux de couverture avec sérieux. Pour une toiture fiable et durable, faites appel à notre équipe expérimentée.",
       image: {
         url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         alt: "Toiture bordelaise",
       },
       date: "24 mai, 2023",
-      description:
-        "TeraBois est votre couvreur de confiance à Bordeaux, offrant des services de qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous pour découvrir comment nous pouvons améliorer votre toit.",
       category: { title: "Construction", href: "construction" },
       author: {
         name: "TeraBois",
@@ -497,10 +482,9 @@ const posts = {
     },
     {
       id: 6,
-      imageUrl: "image",
-      title:
-        "Couvreurs Bordeaux : TeraBois, pour une toiture durable et de qualité",
+      title: "Couvreurs à Bordeaux: Terabois, excellence et professionnalisme",
       slug: "couvreurs-bordeaux-avec-terabois",
+      tags: "Couvreurs, Bordeaux, Terabois, Excellence, Professionnalisme, Toiture, Impeccable, Résistante, Savoir-faire, Expertise",
       content: [
         {
           tag: "h2",
@@ -582,14 +566,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "TeraBois est votre entreprise de couvreurs à Bordeaux, proposant des services de haute qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous et découvrez comment nous pouvons optimiser votre confort et votre sécurité.",
+        "Optez pour Terabois, des couvreurs experts à Bordeaux, pour une toiture impeccable et résistante. Faites confiance à notre savoir-faire et à notre expertise.",
       image: {
         url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         alt: "Toiture bordelaise",
       },
       date: "24 mai, 2023",
-      description:
-        "TeraBois est votre entreprise de couvreurs à Bordeaux, proposant des services de haute qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous et découvrez comment nous pouvons optimiser votre confort et votre sécurité.",
       category: { title: "Couverture", href: "couverture" },
       author: {
         name: "TeraBois",
@@ -606,10 +588,9 @@ const posts = {
     },
     {
       id: 7,
-      imageUrl: "image",
-      title:
-        "Couvreur Zingueur Bordeaux : Choisissez TeraBois, l'Expert de Confiance",
+      title: "Couvreur Zingueur à Bordeaux: TeraBois, l'expert de qualité",
       slug: "couvreur-zingueur-bordeaux-terabois",
+      tags: "Couvreur, Zingueur, Bordeaux, TeraBois, Expert, Qualité, Travaux, Couverture, Maison, Chaleureuse",
       content: [
         {
           tag: "h2",
@@ -682,14 +663,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "TeraBois, votre couvreur zingueur à Bordeaux, propose un service de haute qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous et découvrez comment nous pouvons améliorer le confort et la sécurité de votre maison.",
+        "Pour vos travaux de couverture à Bordeaux, faites confiance à TeraBois, le couvreur zingueur expert. Une qualité d'exception pour une maison chaleureuse.",
       image: {
         url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         alt: "Toiture bordelaise",
       },
       date: "24 mai, 2023",
-      description:
-        "TeraBois, votre couvreur zingueur à Bordeaux, propose un service de haute qualité pour la réparation, le remplacement et l'entretien de votre toiture. Contactez-nous et découvrez comment nous pouvons améliorer le confort et la sécurité de votre maison.",
       category: {
         title: "Construction",
         href: "construction",
@@ -708,10 +687,9 @@ const posts = {
     },
     {
       id: 8,
-      imageUrl: "image",
-      title:
-        "Couvreur à Bordeaux : TeraBois, Votre Expert en Toiture de Confiance",
+      title: "Couvreur à Bordeaux: TeraBois, excellence et fiabilité garanties",
       slug: "couvreur-a-bordeaux-avec-terabois",
+      tags: "Couvreur, Bordeaux, TeraBois, Services, Haute Qualité, Couverture, Isolation, Rénovation, Excellence",
       content: [
         {
           tag: "h2",
@@ -793,14 +771,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "Optez pour TeraBois, votre couvreur à Bordeaux, pour un service de haute qualité en réparation, remplacement et entretien de votre toiture. Découvrez notre engagement pour votre satisfaction et la sécurité de votre maison.",
+        "Choisissez TeraBois, votre couvreur à Bordeaux, pour des services de haute qualité en couverture, isolation et rénovation. Faites le choix de l'excellence !",
       image: {
         url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         alt: "Toiture bordelaise",
       },
       date: "24 mai, 2023",
-      description:
-        "Optez pour TeraBois, votre couvreur à Bordeaux, pour un service de haute qualité en réparation, remplacement et entretien de votre toiture. Découvrez notre engagement pour votre satisfaction et la sécurité de votre maison.",
       category: { title: "Construction", href: "construction" },
       author: {
         name: "TeraBois",
@@ -817,10 +793,9 @@ const posts = {
     },
     {
       id: 9,
-      imageUrl: "image",
-      title:
-        "Couvreur à Mérignac : Pourquoi TeraBois est le choix idéal pour vos travaux de couverture",
+      title: "Couvreur à Mérignac: TeraBois, pour un habitat durable et sain",
       slug: "couvreur-a-merignac-avec-terabois",
+      tags: "Couvreur, Mérignac, TeraBois, Habitat Durable, Sain, Expertise, Ecologique",
       content: [
         {
           tag: "h2",
@@ -871,14 +846,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "TeraBois est votre couvreur de choix à Mérignac, proposant une gamme complète de services pour répondre à tous vos besoins en matière de toiture. Faites confiance à notre expertise et notre engagement envers l'excellence.",
+        "Pour tous vos besoins de couverture à Mérignac, faites confiance à TeraBois. Nous apportons notre expertise pour un habitat sain et écologique.",
       image: {
         url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         alt: "Toiture merignac",
       },
       date: "24 mai, 2023",
-      description:
-        "TeraBois est votre couvreur de choix à Mérignac. Nous proposons une gamme complète de services pour répondre à tous vos besoins en matière de toiture, incluant la réparation, la rénovation, et l'installation de nouvelle toiture.",
       category: { title: "Construction", href: "construction" },
       author: {
         name: "TeraBois",
@@ -894,10 +867,10 @@ const posts = {
     },
     {
       id: 10,
-      imageUrl: "image",
       title:
-        "Couvreur à Pessac : Pourquoi faire appel à TeraBois est le choix optimal pour vos travaux de couverture",
+        "Couvreur à Pessac: TeraBois, votre partenaire pour un habitat sûr",
       slug: "couvreur-pessac-avec-terabois",
+      tags: "Couvreur, Pessac, TeraBois, Habitat sûr, Qualité, Isolation, Ecologique",
       content: [
         {
           tag: "h2",
@@ -945,14 +918,12 @@ const posts = {
         },
       ],
       metaDescription:
-        "Découvrez TeraBois, votre couvreur à Pessac, et comprenez pourquoi nous sommes le choix préféré pour vos travaux de toiture. Notre expertise, notre souci de la qualité et notre engagement envers la satisfaction du client nous distinguent. Faites appel à TeraBois pour une toiture durable et de qualité.",
+        "TeraBois à Pessac est votre choix sûr pour des services de couverture de qualité. Profitez d'une maison isolée, chaleureuse et écologique.",
       image: {
         url: "https://images.unsplash.com/photo-1472342139520-1aa49517fed8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYyfHx0b2l0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         alt: "Toiture Pessac",
       },
       date: "24 mai, 2023",
-      description:
-        "Découvrez TeraBois, votre couvreur à Pessac, et comprenez pourquoi nous sommes le choix préféré pour vos travaux de toiture. Notre expertise, notre souci de la qualité et notre engagement envers la satisfaction du client nous distinguent. Faites appel à TeraBois pour une toiture durable et de qualité.",
       category: { title: "Toiture", href: "toiture" },
       author: {
         name: "TeraBois",
