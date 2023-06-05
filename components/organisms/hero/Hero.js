@@ -88,7 +88,11 @@ const Hero = () => {
                   </a>
                 </div>
                 <div className="flex items-center mt-10">
-                  <img src="/img/logos/logoRGE.png" className="h-10 w-10" />
+                  <img
+                    src="/img/logos/logoRGE.png"
+                    alt="logo RGE"
+                    className="h-10 w-10"
+                  />
                   <h3 className="text-sm font-normal ml-3">
                     {" "}
                     Entreprise certifiée RGE
