@@ -4,7 +4,11 @@ import FormContent from "../../../components/organisms/formContent/FormContent";
 
 const index = () => {
   return (
-    <Blog>
+    <Blog
+      title="RDV Charpente Terabois : Votre Expert en Charpente à Bordeaux"
+      description="Prenez un RDV pour votre projet de charpente avec Terabois, expert en amélioration de l'habitat à Bordeaux et Gironde. Commencez votre transformation aujourd'hui."
+      tags="RDV Charpente Terabois, Expert Charpente, Amélioration Habitat, Isolation, Rénovation, Couverture, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <FormContent
         title="Charpentier en gironde"
         description="TeraBois est votre partenaire de confiance pour des charpentes robustes et de qualité supérieure. Nous combinons techniques traditionnelles et innovations modernes pour assurer une structure solide et durable à votre maison. Choisissez TeraBois pour une habitation alliant stabilité, performance et esthétisme."
