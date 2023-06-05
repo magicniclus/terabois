@@ -4,7 +4,11 @@ import FormContent from "../../../components/organisms/formContent/FormContent";
 
 const index = () => {
   return (
-    <Blog>
+    <Blog
+      title="RDV pour Création de Terrasse en Bois avec Terabois"
+      description="Prenez RDV pour l'installation de votre terrasse en bois. Terabois, expert en amélioration de l'habitat à Bordeaux et en Gironde. Embellissez votre extérieur."
+      tags="RDV Terrasse Bois, Création Terrasse, Aménagement Extérieur, Terabois, Isolation, Couverture, Charpente, Terrasse bois, Extension ossature, Bordeaux, Gironde"
+    >
       <FormContent
         title="Terrasse bois"
         description="Confiez à Terabois la réalisation de votre terrasse en bois pour un espace extérieur chaleureux et durable. Nos experts garantissent une finition impeccable pour un véritable coin de paradis."
