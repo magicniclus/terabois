@@ -5,8 +5,9 @@ import Cta from "../../components/organisms/cta/Cta";
 const index = () => {
   return (
     <Global
-      description="Découvrez Terabois, spécialiste de la rénovation à Bordeaux. Plus de 30 ans d'expérience dans l'isolation des combles, la réalisation de terrasses en bois, les travaux de charpente et la construction d'ossature bois. Contactez-nous pour un devis gratuit."
-      titre="Rénovation à Bordeaux : Terabois, votre expert en travaux d'isolation et construction bois"
+      description="Apprenez-en plus sur Terabois, votre expert local en services d'isolation, de rénovation et plus à Bordeaux et en Gironde. Découvrez nos valeurs et notre expertise.Apprenez-en plus sur Terabois, votre expert local en services d'isolation, de rénovation et plus à Bordeaux et en Gironde. Découvrez nos valeurs et notre expertise.Apprenez-en plus sur Terabois, votre expert local en services d'isolation, de rénovation et plus à Bordeaux et en Gironde. Découvrez nos valeurs et notre expertise."
+      title="Terabois : Votre Expert Habitat en Isolation & Rénovation en Gironde"
+      tags="Terabois, Expert Habitat, Isolation, Rénovation, Couverture, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
     >
       <EntrepriseContent />
       <Cta />
