@@ -3,7 +3,11 @@ import Global from "../../layouts/Global";
 
 const index = () => {
   return (
-    <Global>
+    <Global
+      title="Connexion Terabois : Accédez à Vos Services d'Amélioration de l'Habitat"
+      descritpion="Connectez-vous à Terabois pour gérer vos projets d'isolation, de rénovation, et plus encore. Expertise en amélioration de l'habitat à Bordeaux et Gironde."
+      tags="Connexion Terabois, Amélioration Habitat, Services d'isolation, Rénovation, Couverture, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <div className="flex min-h-[calc(100vh-80px)] flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
