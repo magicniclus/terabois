@@ -3,7 +3,11 @@ import Global from "../../layouts/Global";
 
 const index = () => {
   return (
-    <Global>
+    <Global
+      title="Mentions Légales Terabois : Votre Expert Habitat en Gironde"
+      description="Consultez les mentions légales de Terabois, votre spécialiste en services d'isolation et de rénovation à Bordeaux et en Gironde. Transparence et confiance"
+      tags="Mentions Légales Terabois, Expert Habitat, Isolation, Rénovation, Couverture, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <div className="mx-auto max-w-7xl  px-6 lg:px-8 pb-10">
         <h1 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl  mt-16">
           Mentions Légales de TeraBois
