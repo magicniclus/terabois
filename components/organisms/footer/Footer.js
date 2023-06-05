@@ -249,9 +249,20 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-            &copy; 2023 Terabois, Inc. Tous droits réservés.
-          </p>
+          <div>
+            <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
+              &copy; 2023 Terabois, Inc. Tous droits réservés.
+            </p>
+            <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
+              Site développé et propulsé par{" "}
+              <a
+                className="underline"
+                href="https://www.adsventure-agency.com/"
+              >
+                Adsventure
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
