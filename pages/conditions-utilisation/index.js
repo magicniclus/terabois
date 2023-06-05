@@ -83,3 +83,5 @@ const index = () => {
     </Global>
   );
 };
+
+export default index;
