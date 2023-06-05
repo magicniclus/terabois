@@ -27,7 +27,7 @@ const index = () => {
         </p>
         <p className="text-nomral font-normal mt-5">
           Téléphone : 06 49 23 13 80 <br />
-          Email : casterafranck.contact@gmail.com
+          Email : contact@terabois.fr
         </p>
         <p className="text-nomral font-normal mt-5">
           Directeur de la publication : Mr Castera{" "}
