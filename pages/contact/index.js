@@ -3,7 +3,11 @@ import Blog from "../../layouts/Blog";
 import FormContent from "../../components/organisms/formContent/FormContent";
 const index = () => {
   return (
-    <Blog>
+    <Blog
+      title="Contact Terabois : Experts en Isolation & Rénovation en Gironde"
+      description="Contactez Terabois, votre partenaire en amélioration de l'habitat à Bordeaux et en Gironde. Parlons de vos projets d'isolation et de rénovation dès maintenant."
+      tags="Contact Terabois, Amélioration Habitat, Services d'isolation, Rénovation, Couverture, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <FormContent
         title="Rénovez avec sérénité"
         description="Choisir Terabois expert en rénovation en gironde, pour un confort optimal et des économies d'énergie. Profitez des aides de l'État pour un investissement malin et éco-responsable."
