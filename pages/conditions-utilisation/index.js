@@ -15,12 +15,12 @@ const index = () => {
           1. Acceptation des Conditions d'Utilisation
         </h2>
         <p className="text-nomral font-normal mt-5">
-          L'accès et l'utilisation du site [URL du site web de l'entreprise],
-          ci-après désigné "le site", sont soumis aux présentes "Conditions
-          d'Utilisation" détaillées ci-dessous ainsi qu'aux lois et/ou
-          règlements applicables. La connexion et l'accès à ce site impliquent
-          l'acceptation intégrale et sans réserve de l'internaute à toutes les
-          dispositions des présentes Conditions d'Utilisation.
+          L'accès et l'utilisation du site www.terabois.fr, ci-après désigné "le
+          site", sont soumis aux présentes "Conditions d'Utilisation" détaillées
+          ci-dessous ainsi qu'aux lois et/ou règlements applicables. La
+          connexion et l'accès à ce site impliquent l'acceptation intégrale et
+          sans réserve de l'internaute à toutes les dispositions des présentes
+          Conditions d'Utilisation.
         </p>
         <h2 className="text-2xl font-bold tracking-tight text-gray-800 sm:text-3xl  mt-16">
           2. Utilisation du Site
