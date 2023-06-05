@@ -4,7 +4,11 @@ import FormContent from "../../../components/organisms/formContent/FormContent";
 
 const index = () => {
   return (
-    <Blog>
+    <Blog
+      title="RDV Isolation Combles Terabois : Expert à Bordeaux et Gironde"
+      description="Programmez votre RDV pour l'isolation des combles avec Terabois, le spécialiste de l'habitat à Bordeaux et Gironde. Economisez l'énergie et gagnez en confort."
+      tags="RDV Isolation Combles Terabois, Isolation Combles, Expert Isolation, Rénovation, Couverture, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <FormContent
         description="Choisir Terabois expert en isolation durable, pour un confort optimal et des économies d'énergie. Profitez des aides de l'État pour un investissement malin et éco-responsable."
         avantages={[
