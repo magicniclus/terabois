@@ -2,7 +2,11 @@ import Global from "../../layouts/Global";
 
 const index = () => {
   return (
-    <Global>
+    <Global
+      title="Conditions d'Utilisation Terabois : Rénovation & Isolation Habitat"
+      description="Découvrez les conditions d'utilisation de Terabois, expert en isolation et rénovation d'habitat à Bordeaux et en Gironde. Naviguez en toute confiance."
+      tags="Conditions d'Utilisation, Terabois, Rénovation Habitat, Isolation des combles, Isolation sous toiture, Isolation des murs, Couverture, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <div className="mx-auto max-w-7xl  px-6 lg:px-8 pb-10">
         <h1 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl  mt-16">
           Conditions d'Utilisation de TeraBois
