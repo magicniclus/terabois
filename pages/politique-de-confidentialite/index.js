@@ -3,7 +3,11 @@ import Global from "../../layouts/Global";
 
 const index = () => {
   return (
-    <Global>
+    <Global
+      title="Politique de Confidentialité Terabois : Nous Respectons Votre Vie Privée"
+      description="Découvrez comment Terabois, votre expert en isolation et rénovation à Bordeaux et en Gironde, protège votre vie privée. Nous valorisons votre confiance."
+      tags="Politique de Confidentialité Terabois, Respect Vie Privée, Isolation, Rénovation, Couverture, Charpente, Terrasse en bois, Extension ossature, Bordeaux, Gironde"
+    >
       <div className="mx-auto max-w-7xl  px-6 lg:px-8 pb-10">
         <h1 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl  mt-16">
           Politique de confidentialité
