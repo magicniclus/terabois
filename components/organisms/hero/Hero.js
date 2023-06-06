@@ -6,7 +6,7 @@ import { PhoneIcon, UserCircleIcon } from "@heroicons/react/20/solid";
 const Hero = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="bg-white">
+    <div className="bg-white max-w-7xl mx-auto">
       <header className="absolute inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-7xl">
           <div className="px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0">
