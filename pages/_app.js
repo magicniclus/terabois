@@ -8,7 +8,7 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const tagManagerArgs = {
-      gtmId: "GTM-K3X5GGQ",
+      gtmId: "GTM-P6FBLTV",
     };
     TagManager.initialize(tagManagerArgs);
   }, []);
