@@ -6,13 +6,16 @@ import {
   UserCircleIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { useSelector } from "react-redux";
+import { signOut } from "../firebase/auth";
+import { useRouter } from "next/router";
 
 const user = {
   name: "Tom Cook",
   email: "tom@example.com",
   imageUrl: "/img/logos/logo.png",
 };
-const navigation = [{ name: "Dashboard", href: "#", current: true }];
+const navigation = [{ name: "Prospects", href: "#", current: true }];
 const userNavigation = [
   { name: "Mon profil", href: "#" },
   { name: "Parametre", href: "#" },
@@ -24,6 +27,18 @@ function classNames(...classes) {
 }
 const BackOffice = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const userName = useSelector((state) => state.userAdmin.name);
+
+  const router = useRouter();
+
+  const handleSignOut = async () => {
+    try {
+      await signOut();
+      router.push("/connexion");
+    } catch (error) {
+      console.error("Error signing out: ", error);
+    }
+  };
   return (
     <>
       <div className="min-h-full">
@@ -78,6 +93,7 @@ const BackOffice = (props) => {
                             <UserCircleIcon
                               className="h-8 w-8 text-gray-400"
                               aria-hidden="true"
+                              onClick={() => setIsOpen(!isOpen)}
                             />
                           </Menu.Button>
                         </div>
@@ -101,6 +117,11 @@ const BackOffice = (props) => {
                                       active ? "bg-gray-100" : "",
                                       "block px-4 py-2 text-sm text-gray-700"
                                     )}
+                                    onClick={
+                                      item.name === "Sign out"
+                                        ? handleSignOut
+                                        : null
+                                    }
                                   >
                                     {item.name}
                                   </a>
@@ -197,7 +218,7 @@ const BackOffice = (props) => {
         <header className="bg-white shadow">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-              Dashboard
+              {userName}
             </h1>
           </div>
         </header>
