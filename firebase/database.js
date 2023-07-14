@@ -1,5 +1,7 @@
-import { database } from "./firebase.config";
+import { teraboisDatabase, maprimerenovDatabase } from "./firebase.config";
 import { set, ref } from "firebase/database";
+
+//TeraBois
 
 function writeUserData(
   userId,
@@ -11,7 +13,7 @@ function writeUserData(
   prestation
 ) {
   return new Promise((resolve, reject) => {
-    set(ref(database, "contacts/" + userId), {
+    set(ref(teraboisDatabase, "contacts/" + userId), {
       name,
       lastname,
       email,
@@ -33,7 +35,7 @@ function writeUserData(
 
 const subscribeAtNewsLetter = (email, userId) => {
   return new Promise((resolve, reject) => {
-    set(ref(database, "newsLetter/" + userId), {
+    set(ref(teraboisDatabase, "newsLetter/" + userId), {
       email,
       date: new Date().toLocaleString(),
     })
@@ -48,3 +50,5 @@ const subscribeAtNewsLetter = (email, userId) => {
 };
 
 export { writeUserData, subscribeAtNewsLetter };
+
+//Maprimerenov
