@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Global from "../../layouts/Global";
+import { maprimerenovAuth } from "../../firebase/firebase.config";
+import { signInWithEmailAndPassword } from "@firebase/auth";
+import { useRouter } from "next/router";
 
 const index = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const router = useRouter();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await signInWithEmailAndPassword(maprimerenovAuth, email, password);
+      await router.push("/lead-manager");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <Global
       title="Connexion Terabois : Accédez à Vos Services d'Amélioration de l'Habitat"
@@ -21,7 +39,12 @@ const index = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form
+            className="space-y-6"
+            action="#"
+            method="POST"
+            onSubmit={handleSubmit}
+          >
             <div>
               <label
                 htmlFor="email"
@@ -37,6 +60,8 @@ const index = () => {
                   autoComplete="email"
                   required
                   className="block w-full rounded-md border-0 py-1.5 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </div>
@@ -66,6 +91,8 @@ const index = () => {
                   autoComplete="current-password"
                   required
                   className="block w-full rounded-md border-0 py-1.5 text-gray-800 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
             </div>
