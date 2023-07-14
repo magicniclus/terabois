@@ -16,18 +16,24 @@ const index = () => {
   const route = useRouter();
 
   useEffect(() => {
-    getData().then((res) => {
-      const sortedData = [...res].sort((a, b) => {
-        if (a.date > b.date) return -1;
-        if (a.date < b.date) return 1;
-        return 0;
+    getUser()
+      .then((res) => {
+        getData().then((res) => {
+          const sortedData = [...res].sort((a, b) => {
+            if (a.date > b.date) return -1;
+            if (a.date < b.date) return 1;
+            return 0;
+          });
+          setData(sortedData);
+          dispatch({
+            type: "SET_DATA",
+            payload: sortedData,
+          });
+        });
+      })
+      .catch((err) => {
+        route.push("/connexion");
       });
-      setData(sortedData);
-      dispatch({
-        type: "SET_DATA",
-        payload: sortedData,
-      });
-    });
   }, []);
 
   useEffect(() => {
