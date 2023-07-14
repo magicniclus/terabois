@@ -2,12 +2,14 @@ import React, { useEffect, useState, Fragment } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 import { useSelector, useDispatch } from "react-redux";
+import { useRouter } from "next/router";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function SearchBar(props) {
+  const router = useRouter();
   const dispatch = useDispatch();
   const openSearch = useSelector((state) => state.openSearch);
 
@@ -79,6 +81,11 @@ export default function SearchBar(props) {
     }
   }, [debouncedSearchTerm]);
 
+  const handleChangePage = (id) => {
+    router.push(`lead-manager/prospect/${id}`);
+    dispatch({ type: "OPEN_SEARCH", payload: false });
+  };
+
   useEffect(() => {
     setOpen(openSearch);
   }, [openSearch]);
@@ -142,6 +149,9 @@ export default function SearchBar(props) {
                             active && "bg-indigo-600 text-white"
                           )
                         }
+                        onClick={() => {
+                          handleChangePage(person.date.seconds);
+                        }}
                       >
                         {person.name}{" "}
                         <span className="text-xs">
