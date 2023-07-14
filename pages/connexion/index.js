@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Global from "../../layouts/Global";
 import { maprimerenovAuth } from "../../firebase/firebase.config";
 import { signInWithEmailAndPassword } from "@firebase/auth";
 import { useRouter } from "next/router";
+import { getUser } from "../../firebase/auth";
 
 const index = () => {
   const [email, setEmail] = useState("");
@@ -19,6 +20,16 @@ const index = () => {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    getUser()
+      .then((res) => {
+        router.push("/lead-manager");
+      })
+      .catch((err) => {
+        null;
+      });
+  }, []);
 
   return (
     <Global
