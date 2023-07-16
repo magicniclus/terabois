@@ -30,14 +30,12 @@ const maprimerenovConfig = {
 let teraboisApp;
 let maprimerenovApp;
 
-if (typeof window !== "undefined") {
-  if (!getApps().length) {
-    teraboisApp = initializeApp(teraboisConfig, "Terabois");
-    maprimerenovApp = initializeApp(maprimerenovConfig, "Maprimerenov");
-  } else {
-    teraboisApp = getApp("Terabois");
-    maprimerenovApp = getApp("Maprimerenov");
-  }
+if (!getApps().length) {
+  teraboisApp = initializeApp(teraboisConfig, "Terabois");
+  maprimerenovApp = initializeApp(maprimerenovConfig, "Maprimerenov");
+} else {
+  teraboisApp = getApp("Terabois");
+  maprimerenovApp = getApp("Maprimerenov");
 }
 
 const teraboisDatabase = teraboisApp ? getDatabase(teraboisApp) : null;
