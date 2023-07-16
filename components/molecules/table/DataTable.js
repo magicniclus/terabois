@@ -130,18 +130,18 @@ const DataTable = (props) => {
                       {data &&
                         selectedData.map((person) => (
                           <tr key={person.date}>
-                            <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0 cursor-pointer">
+                            <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0 ">
                               {capitalizeFirstLetter(person.name)}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300 cursor-pointer">
+                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300 ">
                               {new Date(
                                 person.date.seconds * 1000
                               ).toLocaleDateString("fr-FR")}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300 cursor-pointer">
+                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300 ">
                               {person.zipCode}
                             </td>
-                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300 cursor-pointer">
+                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300 ">
                               {[
                                 person.isolation ? "Isolation" : null,
                                 person.fenetre ? "Menuiserie" : null,
@@ -170,7 +170,7 @@ const DataTable = (props) => {
                             </td>
                             <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                               <a
-                                href={`lead-manager/prospect/${person.date.seconds}`}
+                                href={`lead-manager/prospect/${person.phone}`}
                                 className="text-indigo-400 hover:text-indigo-300"
                               >
                                 Edit
