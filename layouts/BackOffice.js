@@ -9,13 +9,16 @@ import {
 import { useSelector } from "react-redux";
 import { signOut } from "../firebase/auth";
 import { useRouter } from "next/router";
+import { ArrowLeftIcon } from "@heroicons/react/20/solid";
 
 const user = {
   name: "Tom Cook",
   email: "tom@example.com",
   imageUrl: "/img/logos/logo.png",
 };
-const navigation = [{ name: "Prospects", href: "#", current: true }];
+const navigation = [
+  { name: "Prospects", href: "/lead-manager", current: false },
+];
 const userNavigation = [
   { name: "Mon profil", href: "#" },
   { name: "Parametre", href: "#" },
@@ -27,7 +30,9 @@ function classNames(...classes) {
 }
 const BackOffice = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const userName = useSelector((state) => state.userAdmin.name);
+  const userName = useSelector(
+    (state) => state.userAdmin.name || props.userName
+  );
 
   const router = useRouter();
 
@@ -216,7 +221,14 @@ const BackOffice = (props) => {
         </Disclosure>
 
         <header className="bg-white shadow">
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex items-center">
+            {props.userName ? (
+              <ArrowLeftIcon
+                className="h-6 w-6 mr-5 cursor-pointer"
+                aria-hidden="true"
+                onClick={() => router.back()}
+              />
+            ) : null}
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
               {userName}
             </h1>
