@@ -150,7 +150,7 @@ export default function SearchBar(props) {
                           )
                         }
                         onClick={() => {
-                          handleChangePage(person.date.seconds);
+                          handleChangePage(person.phone);
                         }}
                       >
                         {person.name}{" "}
