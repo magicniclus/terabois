@@ -54,7 +54,7 @@ export const getDataByPhone = async (phone) => {
   }
 };
 
-export const updateCommentByPhone = async (phone, newComment) => {
+export const updateElementByPhone = async (phone, field, newValue) => {
   if (!maprimerenovDatabase) {
     throw new Error("Firebase not initialized");
   }
@@ -71,7 +71,7 @@ export const updateCommentByPhone = async (phone, newComment) => {
         "primeRenovProspect",
         docId
       );
-      await updateDoc(docToUpdate, { comment: newComment });
+      await updateDoc(docToUpdate, { [field]: newValue });
       console.log("Phone number updated successfully");
     } else {
       console.log("No document with the specified date found");
