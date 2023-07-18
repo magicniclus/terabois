@@ -1,30 +1,57 @@
 import React, { useState } from "react";
 import List from "../../atoms/lists/list";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/20/solid";
-import { updateCommentByPhone } from "../../../firebase/getData";
+import { updateElementByPhone } from "../../../firebase/getData";
 
 const ProspectCntent = (props) => {
   const data = props.data;
-  const [selectComment, setSelectComment] = useState(false);
-  const [comment, setComment] = useState();
-  const closeComment = (e) => {
+  const fields = ["comment", "phone", "email", "name", "zipCode"];
+
+  const initialFieldState = fields.reduce(
+    (acc, field) => ({
+      ...acc,
+      [field]: { selected: false, value: data[field] || "" },
+    }),
+    {}
+  );
+
+  const [fieldState, setFieldState] = useState(initialFieldState);
+
+  const closeField = (field) => (e) => {
     e.preventDefault();
-    setSelectComment(false);
+    setFieldState({
+      ...fieldState,
+      [field]: { ...fieldState[field], selected: false },
+    });
   };
-  const updateComment = (e) => {
+
+  const updateField = (field) => (e) => {
     e.preventDefault();
-    setSelectComment(true);
+    setFieldState({
+      ...fieldState,
+      [field]: { ...fieldState[field], selected: true },
+    });
   };
-  const saveComment = (e) => {
+  const saveField = (field) => (e) => {
     e.preventDefault();
-    setSelectComment(false);
-    updateCommentByPhone(data.phone, comment)
+    setFieldState({
+      ...fieldState,
+      [field]: { ...fieldState[field], selected: false },
+    });
+    updateElementByPhone(data.phone, field, fieldState[field].value)
       .then((res) => {
         window.location.reload();
       })
       .catch((err) => {
         console.log(err);
       });
+  };
+
+  const setFieldValue = (field) => (e) => {
+    setFieldState({
+      ...fieldState,
+      [field]: { ...fieldState[field], value: e.target.value },
+    });
   };
 
   return (
@@ -44,12 +71,36 @@ const ProspectCntent = (props) => {
               Nom/Prénom
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 flex">
-              {data.name}
+              {fieldState["name"].selected ? (
+                <input
+                  type="text"
+                  value={fieldState["name"].value}
+                  onChange={setFieldValue("name")}
+                  className="block rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
+                  required
+                />
+              ) : (
+                <p>{fieldState["name"].value || "Nom non renseigné"}</p>
+              )}
+              {fieldState["name"].selected ? (
+                <a
+                  href="#"
+                  onClick={closeField("name")}
+                  className="text-red-400 hover:text-red-300 ml-5"
+                >
+                  Annuler
+                </a>
+              ) : null}
               <a
                 href="#"
+                onClick={
+                  fieldState["name"].selected
+                    ? saveField("name")
+                    : updateField("name")
+                }
                 className="text-indigo-400 hover:text-indigo-300 ml-5"
               >
-                Edit
+                {fieldState["name"].selected ? "Valider" : "Modifier"}
               </a>
             </dd>
           </div>
@@ -63,13 +114,10 @@ const ProspectCntent = (props) => {
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm font-medium leading-6 text-gray-900">
-              Statut
+              Status
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              <List
-                options={["Prospect", "Client"]}
-                status={data.status ? data.status : null}
-              />
+              {data.status}
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -77,15 +125,9 @@ const ProspectCntent = (props) => {
               Téléphone
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 flex">
-              <a href="#" className="mr-5">
-                <PhoneIcon className="h-5 w-5 text-gray-400 mr-2" />
-              </a>
-              {data.phone}
-              <a
-                href="#"
-                className="text-indigo-400 hover:text-indigo-300 ml-5"
-              >
-                Edit
+              <a href="#" className=" flex">
+                <PhoneIcon className="h-5 w-5 text-gray-400 mr-2 mr-5" />
+                {data.phone}
               </a>
             </dd>
           </div>
@@ -94,15 +136,45 @@ const ProspectCntent = (props) => {
               Adresse email
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 flex">
-              <a href={`mailto:${data.email}`} className="mr-5">
-                <EnvelopeIcon className="h-5 w-5 text-gray-400" />
-              </a>
-              {data.email}
+              {fieldState["email"].selected ? (
+                <input
+                  type="email"
+                  value={fieldState["email"].value}
+                  onChange={setFieldValue("email")}
+                  className="block w-min rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  required
+                />
+              ) : (
+                <>
+                  <a
+                    href={`mailto:${fieldState["email"].value}`}
+                    className="flex"
+                  >
+                    <EnvelopeIcon className="h-5 w-5 text-gray-400 mr-5" />
+                    <p>{fieldState["email"].value || "Email non renseigné"}</p>
+                  </a>
+                </>
+              )}
+              {fieldState["email"].selected ? (
+                <a
+                  href="#"
+                  onClick={closeField("email")}
+                  className="text-red-400 hover:text-red-300 ml-5"
+                >
+                  Annuler
+                </a>
+              ) : null}
               <a
                 href="#"
+                onClick={
+                  fieldState["email"].selected
+                    ? saveField("email")
+                    : updateField("email")
+                }
                 className="text-indigo-400 hover:text-indigo-300 ml-5"
               >
-                Edit
+                {fieldState["email"].selected ? "Valider" : "Modifier"}
               </a>
             </dd>
           </div>
@@ -110,13 +182,39 @@ const ProspectCntent = (props) => {
             <dt className="text-sm font-medium leading-6 text-gray-900">
               Code postal
             </dt>
-            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              {data.zipCode}
+            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 flex">
+              {fieldState["zipCode"].selected ? (
+                <input
+                  type="text"
+                  value={fieldState["zipCode"].value}
+                  onChange={setFieldValue("zipCode")}
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
+                  required
+                />
+              ) : (
+                <p>
+                  {fieldState["zipCode"].value || "Code postal non renseigné"}
+                </p>
+              )}
+              {fieldState["zipCode"].selected ? (
+                <a
+                  href="#"
+                  onClick={closeField("zipCode")}
+                  className="text-red-400 hover:text-red-300 ml-5"
+                >
+                  Annuler
+                </a>
+              ) : null}
               <a
                 href="#"
+                onClick={
+                  fieldState["zipCode"].selected
+                    ? saveField("zipCode")
+                    : updateField("zipCode")
+                }
                 className="text-indigo-400 hover:text-indigo-300 ml-5"
               >
-                Edit
+                {fieldState["zipCode"].selected ? "Valider" : "Modifier"}
               </a>
             </dd>
           </div>
@@ -135,13 +233,6 @@ const ProspectCntent = (props) => {
               ]
                 .filter(Boolean)
                 .join(", ")}
-
-              <a
-                href="#"
-                className="text-indigo-400 hover:text-indigo-300 ml-5"
-              >
-                Edit
-              </a>
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -149,42 +240,35 @@ const ProspectCntent = (props) => {
               Commantaires
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 flex">
-              {selectComment ? (
+              {fieldState["comment"].selected ? (
                 <textarea
-                  className="w-full"
-                  value={comment}
-                  onChange={(e) => setComment(e.target.value)}
+                  value={fieldState["comment"].value}
+                  onChange={setFieldValue("comment")}
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                 />
               ) : (
-                <p className="w-full">{data.comment || "Aucun commentaire"}</p>
+                <p>{fieldState["comment"].value || "Aucun commentaire"}</p>
               )}
-              {selectComment ? (
+              {fieldState["comment"].selected ? (
                 <a
                   href="#"
-                  className="text-indigo-400 hover:text-indigo-300 ml-5 mr-5"
-                  onClick={closeComment}
+                  onClick={closeField("comment")}
+                  className="text-red-400 hover:text-red-300 ml-5"
                 >
                   Annuler
                 </a>
               ) : null}
               <a
                 href="#"
+                onClick={
+                  fieldState["comment"].selected
+                    ? saveField("comment")
+                    : updateField("comment")
+                }
                 className="text-indigo-400 hover:text-indigo-300 ml-5"
-                onClick={selectComment ? saveComment : updateComment}
               >
-                {selectComment ? "Valider" : "Modifier"}
+                {fieldState["comment"].selected ? "Valider" : "Modifier"}
               </a>
-            </dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">
-              Nombre d'appel
-            </dt>
-            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              <List
-                options={["A contacter", "1", "2", "3", "4", "5", "+5"]}
-                status={data.nbrPhone ? data.nbrPhone : "A contacter"}
-              />
             </dd>
           </div>
         </dl>
