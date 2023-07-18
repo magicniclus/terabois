@@ -44,6 +44,11 @@ const BackOffice = (props) => {
       console.error("Error signing out: ", error);
     }
   };
+
+  const returnToDashboard = () => {
+    router.push("/lead-manager");
+  };
+
   return (
     <>
       <div className="min-h-full">
@@ -186,14 +191,6 @@ const BackOffice = (props) => {
                         alt=""
                       />
                     </div> */}
-                    <div className="ml-3">
-                      <div className="text-base font-medium leading-none text-white">
-                        {user.name}
-                      </div>
-                      <div className="text-sm font-medium leading-none text-gray-400">
-                        {user.email}
-                      </div>
-                    </div>
                     <button
                       type="button"
                       className="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -226,7 +223,7 @@ const BackOffice = (props) => {
               <ArrowLeftIcon
                 className="h-6 w-6 mr-5 cursor-pointer"
                 aria-hidden="true"
-                onClick={() => router.back()}
+                onClick={returnToDashboard}
               />
             ) : null}
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
