@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import List from "../../atoms/lists/List";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import { updateElementByPhone } from "../../../firebase/getData";
 
