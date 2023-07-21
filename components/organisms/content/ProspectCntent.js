@@ -125,7 +125,7 @@ const ProspectCntent = (props) => {
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 flex">
               <a href="#" className=" flex">
-                <PhoneIcon className="h-5 w-5 text-gray-400 mr-2 mr-5" />
+                <PhoneIcon className="h-5 w-5 text-gray-400 mr-5" />
                 {data.phone}
               </a>
             </dd>
