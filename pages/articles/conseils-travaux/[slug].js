@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import posts from "../../../datas/posts";
 import Article from "../../../layouts/Article";
 import ArticleContant from "../../../components/organisms/content/ArticleContant";
-import { useEffect } from "react";
 
 export default function BlogPost({ post }) {
   const router = useRouter();
